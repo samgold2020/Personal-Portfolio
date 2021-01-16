@@ -8,8 +8,8 @@ row-gap: 20px;
 
 
 @media screen and (max-width: 1600px) {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
  }
 
  @media screen and (max-width: 1200px) {
@@ -22,7 +22,6 @@ row-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 20px;
- 
  }
 `;
 
@@ -33,8 +32,6 @@ text-align: center;
  background: blue;
  border-radius: 25px;
  justify-self: center;
- 
-
 
  @media screen and (max-width: 768px) {
   width: 220px;
