@@ -45,3 +45,5 @@ color: white;
 
 `;
 
+export const Skills = styled.div`
+`;

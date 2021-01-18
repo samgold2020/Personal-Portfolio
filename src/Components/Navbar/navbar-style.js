@@ -44,6 +44,8 @@ export const NavLinks = styled(LinkS)`
 padding: 140px;
 font-size: 24px;
 color: white;
+cursor: pointer;
+
 
 @media screen and (max-width: 1100px) {
   padding: 80px;

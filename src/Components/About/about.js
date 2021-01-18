@@ -6,6 +6,7 @@ import {
   DescriptionTwo,
   DescriptionThree,
   Img,
+  Skills,
 } from './about-style';
 
 const about = () => {
@@ -16,6 +17,7 @@ const about = () => {
         <DescriptionOne>Gubergren lorem amet labore est amet aliquyam labore consetetur. Sed labore sit elitr duo, sed.hello</DescriptionOne>
         <DescriptionTwo>Gubergren lorem amet labore est amet aliquyam labore consetetur. Sed labore sit elitr duo, sed.hello</DescriptionTwo>
         <DescriptionThree>Gubergren lorem amet labore est amet aliquyam labore consetetur. Sed labore sit elitr duo, sed.hello</DescriptionThree>
+        <Skills>SKILLS HERE</Skills>
     </AboutContainer>
   )
 }

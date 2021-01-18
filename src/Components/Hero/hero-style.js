@@ -8,6 +8,8 @@ align-items: center;
 padding: 0 30px;
 height: 800px;
 z-index: 1;
+
+
 `;
 
 export const HeroBackground = styled.div`
@@ -31,18 +33,23 @@ export const HeroContent = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-
 `;
 
 export const HeroH1 = styled.h1`
 color: white;
 z-index: 3;
-font-size: 56px;
+font-size: 72px;
+background: rgba(0,0,0,0.5);
+padding-right: 20px;
+padding-left: 20px;
 `;
 
 export const HeroP = styled.p`
 color: white;
 z-index: 3;
 font-size: 36px;
+background: rgba(0,0,0,0.6);
+padding-right: 20px;
+padding-left: 20px;
 
 `;
