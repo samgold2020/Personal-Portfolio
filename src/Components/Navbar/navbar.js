@@ -1,10 +1,11 @@
 import React from 'react'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import {
  Nav,
  MobileIcon,
  NavMenu,
- NavLinks
+ NavLinks,
 } from './navbar-style';
 
 const navbar = ({ toggle }) => {
@@ -14,10 +15,12 @@ const navbar = ({ toggle }) => {
           <FaBars />
         </MobileIcon>
         <NavMenu>
-          <NavLinks>Home</NavLinks>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Projects</NavLinks>
+          <NavLinks> <Link to=''>Home</Link></NavLinks>
+          <NavLinks><Link to=''>Projects</Link></NavLinks>
+          <NavLinks><Link to=''>About</Link></NavLinks>
           <NavLinks>Contact</NavLinks>
+          {/* <NavLinks><FaGithubSquare /></NavLinks>
+          <NavLinks><FaLinkedin /></NavLinks> */}
         </NavMenu>
     </Nav>
   )

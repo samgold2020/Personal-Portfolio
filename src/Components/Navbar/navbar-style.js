@@ -4,16 +4,17 @@ import { Link as LinkS } from 'react-scroll';
 
 
 export const Nav = styled.nav`
+width: 100%;
+min-width: 100vw;
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-color: black;
-background-color: black;
+color: white;
+background-color: #071328;
 height: 80px;
 // top: 0;
 z-index: 2
-
 `;
 
 export const MobileIcon = styled.div`
@@ -41,7 +42,8 @@ export const NavMenu = styled.div`
 
 
 export const NavLinks = styled(LinkS)`
-padding: 140px;
+margin: 120px;
+
 font-size: 24px;
 color: white;
 cursor: pointer;

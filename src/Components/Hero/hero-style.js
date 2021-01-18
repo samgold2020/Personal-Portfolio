@@ -1,13 +1,32 @@
 import styled from 'styled-components';
 
+export const HeroWrapper = styled.div`
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 100%;
+min-height: 100vh;
+width: 100%;
+min-width: 100vw;
+z-index: 1;
+background-color: #071328;
+`;
+
+
 export const HeroContainer = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 800px;
+height: 100%;
+min-height: 100vh;
+width: 85%;
+// min-width: 90vw;
 z-index: 1;
+background-color: #071328;
 
 
 `;

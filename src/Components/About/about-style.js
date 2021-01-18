@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const AboutContainer =styled.div`
 display: grid;
-grid-template-columns: 160px 1fr 1fr 1fr;
+grid-template-columns: 160px 1fr 1fr;
 grid-template-rows: repeat(2, 1fr);
 height: 590px;
 width: 100%;
-background: black;
+background-color: #071328;
 `;
 
 export const Img = styled.img`
@@ -24,26 +24,26 @@ justify-self: center;
 align-self: center;
 
 `;
-export const DescriptionOne = styled.p`
-grid-column: 3/5;
+export const Description = styled.p`
+grid-row: 2;
+grid-column: 2/4;
+font-size: 36px;
 color: white;
-border: 8px solid white;
+
 `;
 
-export const DescriptionTwo = styled.p`
-grid-row: 2;
-grid-column: 1/3;
-border: 8px solid white;
-color: white;
-`;
 
-export const DescriptionThree = styled.p`
-grid-row: 2;
-grid-column: 3/5;
-border: 8px solid white;
-color: white;
+export const SkillsContainer = styled.div`
 
 `;
 
 export const Skills = styled.div`
 `;
+
+export const SkillsOne = styled.div`
+coloor: white;
+z-index: 4;
+`;
+export const SkillsTwo = styled.div``;
+export const SkillsThree = styled.div``;
+export const SkillsFour = styled.div``;

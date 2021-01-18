@@ -6,10 +6,8 @@ export const ProjectsContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 row-gap: 20px;
-background: black;
+background-color: #071328;
 padding: 30px;
-
-
 
 @media screen and (max-width: 1600px) {
   grid-template-columns: repeat(2, 1fr);
@@ -29,15 +27,10 @@ padding: 30px;
  }
 `;
 
-// export const ProjectsContainerTitle = styled.p`
-// color: white;
-// font-size: 46px;
-// padding: 10px 800px;
-// `;
 export const ProjectCard = styled.div`
 text-align: center;
 display: grid;
-grid-template-rows: 80px 280px 100px auto;
+grid-template-rows: 280px 100px auto;
 background-color: white;
 
  width: 420px;
@@ -58,7 +51,10 @@ width: 100%;
 `;
 
 export const ProjectTitle = styled.h2`
+position: absolute;
+padding: 175px 0px 0px;
 font-size: 36px;
+z-index: 1;
 
 `;
 

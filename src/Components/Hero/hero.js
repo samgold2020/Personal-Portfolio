@@ -1,6 +1,7 @@
 import React from 'react';
 import Video from '../../Videos/video2.mp4';
 import {
+  HeroWrapper,
   HeroContainer,
   HeroBackground,
   VideoContainer,
@@ -12,6 +13,7 @@ import {
 
 const hero = () => {
   return (
+    <HeroWrapper>
     <HeroContainer>
       <HeroBackground>
         <VideoContainer loop autoPlay>
@@ -19,10 +21,12 @@ const hero = () => {
         </VideoContainer>
       </HeroBackground>
       <HeroContent>
-        <HeroH1>Samantha Goldstein</HeroH1>
+        <HeroH1>Samantha Goldstein </HeroH1>
         <HeroP>Fullstack Software Engineer</HeroP>
+  
       </HeroContent>
     </HeroContainer>
+    </HeroWrapper>
   )
 }
 
