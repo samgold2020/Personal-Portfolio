@@ -1,17 +1,10 @@
 import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 30px;
-height: 100%;
-min-height: 100vh;
-width: 100%;
-min-width: 100vw;
-z-index: 1;
-background-color: #071328;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
 `;
 
 
@@ -20,47 +13,47 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 0 30px;
-height: 100%;
+// height: 100%;
 min-height: 100vh;
-width: 85%;
-// min-width: 90vw;
-z-index: 1;
-background-color: #071328;
-
-
+background-color: green;
 `;
 
-export const HeroBackground = styled.div`
-position: absolute;
- width: 100%;
- height: 100%;
- overflow: hidden;
-`;
 
 export const VideoContainer = styled.video`
-display: relative;
+// display: relative;
  width: 100%;
- height: 100%;
+ height: 100vh;
  -o-object-fit: cover;
  object-fit: cover;
- z-index: 87;
- background: black 
 `;
 
 export const HeroContent = styled.div`
+position: absolute;
 display: flex;
 flex-direction: column;
 align-items: center;
+
 `;
 
 export const HeroH1 = styled.h1`
 color: white;
-z-index: 3;
+z-index: 99;
 font-size: 72px;
 background: rgba(0,0,0,0.5);
 padding-right: 20px;
 padding-left: 20px;
+
+@media screen and (max-width: 1024px) {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 480px) {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
 `;
 
 export const HeroP = styled.p`
@@ -71,4 +64,15 @@ background: rgba(0,0,0,0.6);
 padding-right: 20px;
 padding-left: 20px;
 
+@media screen and (max-width: 1024px) {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
 `;

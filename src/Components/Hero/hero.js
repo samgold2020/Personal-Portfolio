@@ -11,23 +11,22 @@ import {
 
 } from './hero-style';
 
-const hero = () => {
+const Hero = () => {
   return (
     <HeroWrapper>
     <HeroContainer>
-      <HeroBackground>
+      {/* <HeroBackground> */}
         <VideoContainer loop autoPlay>
         <source src={Video} type='video/mp4'/>
         </VideoContainer>
-      </HeroBackground>
       <HeroContent>
         <HeroH1>Samantha Goldstein </HeroH1>
         <HeroP>Fullstack Software Engineer</HeroP>
-  
       </HeroContent>
+      {/* </HeroBackground> */}
     </HeroContainer>
     </HeroWrapper>
   )
 }
 
-export default hero;
+export default Hero;

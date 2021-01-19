@@ -9,7 +9,7 @@ import {
   ProjectLink,
 } from './projects-style';
 
-const projects = () => {
+const Projects = () => {
 
  
   return (
@@ -30,13 +30,9 @@ const projects = () => {
       <ProjectCard>
       <h1>Project Soon to Come</h1>
       </ProjectCard>
-      <ProjectCard>
-
-      <h1>Project Soon to Come</h1>
-      </ProjectCard>
       
     </ProjectsContainer>
   )
 }
 
-export default projects;
+export default Projects;

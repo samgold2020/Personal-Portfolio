@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
 
 
-import Hero from '../Components/Hero/hero';
-import Navbar from '../Components/Navbar/navbar';
-import Projects from '../Components/Projects/projects';
-import About from '../Components/About/about';
-import Contact from '../Components/Contact/contact';
+import Hero from '../Components/Hero/Hero';
+import Navbar from '../Components/Navbar/Navbar';
+import Projects from '../Components/Projects/Projects';
+import About from '../Components/About/About';
+import Contact from '../Components/Contact/Contact';
+import Footer from '../Components/Footer/Footer';
 
 
-const home = () => {
-  // const [ isOpen, setIsOpen ] = useState(false)
+const Home = () => {
+  const [ hover, setHover ] = useState(false)
 
-  // const toggle = () => {
-  //   setIsOpen(!isOpen)
-  // }
-  //This is setting the state from true/false on Toggle
+  const onHover = () => {
+    setHover(!hover)
+  }
 
 
   return (
     <div>
       <Navbar />
       <Hero />
-      <Projects />
       <About />
+      <Projects />
       <Contact />
+      {/* <Footer onHover={onHover} hover={hover}/> */}
     </div>
   )
 }
 
-export default home;
+export default Home;

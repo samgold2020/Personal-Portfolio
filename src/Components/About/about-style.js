@@ -33,17 +33,4 @@ color: white;
 `;
 
 
-export const SkillsContainer = styled.div`
 
-`;
-
-export const Skills = styled.div`
-`;
-
-export const SkillsOne = styled.div`
-coloor: white;
-z-index: 4;
-`;
-export const SkillsTwo = styled.div``;
-export const SkillsThree = styled.div``;
-export const SkillsFour = styled.div``;

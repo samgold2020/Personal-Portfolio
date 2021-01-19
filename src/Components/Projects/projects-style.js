@@ -4,27 +4,23 @@ import { Link as LinkS } from 'react-scroll';
 
 export const ProjectsContainer = styled.div`
 display: grid;
-grid-template-columns: repeat(4, 1fr);
-row-gap: 20px;
+grid-template-columns: repeat(3, 1fr);
 background-color: #071328;
 padding: 30px;
 
-@media screen and (max-width: 1600px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+
+
+@media screen and (max-width: 1200px) {
+  grid-template-columns: 250px 250px 250px;
+  padding: 30px;
+
  }
 
- @media screen and (max-width: 1200px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
- 
- }
-
- @media screen and (max-width: 768px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 20px;
- }
+//  @media screen and (max-width: 768px) {
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-template-rows: repeat(2, 1fr);
+//   column-gap: 20px;
+//  }
 `;
 
 export const ProjectCard = styled.div`
