@@ -2,10 +2,27 @@ import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
 
+export const ProjectsWrapper = styled.div``;
+
+export const ProjectsTitle = styled.p`
+font-size: 56px;
+display: flex;
+justify-content: center;
+`;
+
+export const ProjectsLine = styled.div`
+// display: flex;
+// justify-content: center;
+// border-left: 1px solid grey;
+// position: absolute;
+// left: 50%;
+// height: 100px;
+`;
+
 export const ProjectsContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-background-color: #071328;
+// background-color: #071328;
 padding: 30px;
 
 
@@ -27,7 +44,9 @@ export const ProjectCard = styled.div`
 text-align: center;
 display: grid;
 grid-template-rows: 280px 100px auto;
-background-color: white;
+background-color: grey;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
+
 
  width: 420px;
  height: 620px;

@@ -18,27 +18,24 @@ padding: 80px 80px;
 `;
 
 export const Img = styled.img`
-// grid-column: 1;
+grid-column: 1;
 border-radius: 50%;
 width: 200px;
 height: 200px;
-// justify-self: center;
-// align-self: center;
+align-self: center;
 `;
 
 export const NameP = styled.p`
-// grid-column: 2;
-// color: white;
-// font-size: 60px;
-// justify-self: center;
-// align-self: center;
+grid-column: 2/4;
+font-size: 60px;
+justify-content: beginning;
+align-self: center;
 
 `;
 export const Description = styled.p`
-// grid-row: 2;
-// grid-column: 2/4;
-// font-size: 36px;
-// color: white;
+grid-row: 2;
+grid-column: 1/4;
+font-size: 36px;
 
 `;
 

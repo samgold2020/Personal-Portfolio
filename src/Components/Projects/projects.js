@@ -1,6 +1,9 @@
 import React from 'react';
 import Flipcards from '../../Videos/Flipcards.png';
 import {
+  ProjectsWrapper,
+  ProjectsTitle,
+  ProjectsLine,
   ProjectsContainer,
   ProjectCard,
   ProjectTitle,
@@ -13,8 +16,10 @@ const Projects = () => {
 
  
   return (
+    <ProjectsWrapper>
+      <ProjectsTitle> My Work</ProjectsTitle>
+      <ProjectsLine></ProjectsLine>
     <ProjectsContainer>
-      {/* <ProjectsContainerTitle>Projects:</ProjectsContainerTitle> */}
       <ProjectCard>
         <ProjectTitle>921Steak</ProjectTitle>
         <ProjectDescription>A fullstack restaurant website built using React, Django, and Python</ProjectDescription>
@@ -32,6 +37,7 @@ const Projects = () => {
       </ProjectCard>
       
     </ProjectsContainer>
+    </ProjectsWrapper>
   )
 }
 
