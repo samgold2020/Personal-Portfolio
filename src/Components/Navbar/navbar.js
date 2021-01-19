@@ -3,23 +3,22 @@ import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import {
  NavWrapper,
- MobileIcon,
- NavMenu,
+ NavContent,
  NavLinks,
+//  MobileIcon,
+//  NavMenu,
+//  NavLinks,
 } from './navbar-style';
 
 const Navbar = ({ toggle }) => {
   return (
     <NavWrapper>
-        <MobileIcon>
-          <FaBars />
-        </MobileIcon>
-        <NavMenu>
-          <NavLinks> <Link to=''>Home</Link></NavLinks>
-          <NavLinks><Link to=''>Projects</Link></NavLinks>
-          <NavLinks><Link to=''>About</Link></NavLinks>
-          <NavLinks>Contact</NavLinks>
-        </NavMenu>
+    <NavContent>
+      <NavLinks>Home</NavLinks>
+      <NavLinks>About</NavLinks>
+      <NavLinks>Projects</NavLinks>
+      <NavLinks>Contact</NavLinks>
+    </NavContent>
     </NavWrapper>
   )
 }

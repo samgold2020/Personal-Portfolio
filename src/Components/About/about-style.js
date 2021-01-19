@@ -1,34 +1,44 @@
 import styled from 'styled-components';
 
+export const AboutWrapper =styled.div`
+padding: 60px 60px;
+`;
+
 export const AboutContainer =styled.div`
 display: grid;
-grid-template-columns: 160px 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, 1fr);
-height: 590px;
-width: 100%;
-background-color: #071328;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
+padding: 80px 80px;
+// border: 9px solid green;
+
+// height: 590px;
+// width: 100%;
 `;
 
 export const Img = styled.img`
-grid-column: 1;
+// grid-column: 1;
 border-radius: 50%;
-justify-self: center;
-align-self: center;
+width: 200px;
+height: 200px;
+// justify-self: center;
+// align-self: center;
 `;
 
 export const NameP = styled.p`
-grid-column: 2;
-color: white;
-font-size: 60px;
-justify-self: center;
-align-self: center;
+// grid-column: 2;
+// color: white;
+// font-size: 60px;
+// justify-self: center;
+// align-self: center;
 
 `;
 export const Description = styled.p`
-grid-row: 2;
-grid-column: 2/4;
-font-size: 36px;
-color: white;
+// grid-row: 2;
+// grid-column: 2/4;
+// font-size: 36px;
+// color: white;
 
 `;
 

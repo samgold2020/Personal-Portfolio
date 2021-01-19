@@ -24,7 +24,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
-      {/* <Footer onHover={onHover} hover={hover}/> */}
+      <Footer onHover={onHover} hover={hover}/>
     </div>
   )
 }

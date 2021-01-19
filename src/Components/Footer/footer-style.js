@@ -6,10 +6,9 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 
 export const FooterWrapper = styled.div`
-position: fixed;
 bottom: 0;
 right: 0;
-width: 100%;
+width: 100vw;
 height: 100px;
 background-color: green;
 z-index: 1;

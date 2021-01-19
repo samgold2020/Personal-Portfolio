@@ -37,9 +37,9 @@ align-items: center;
 
 export const HeroH1 = styled.h1`
 color: white;
-z-index: 99;
+z-index: 2;
 font-size: 72px;
-background: rgba(0,0,0,0.5);
+background: rgba(0,0,0,0.8);
 padding-right: 20px;
 padding-left: 20px;
 
@@ -60,7 +60,7 @@ export const HeroP = styled.p`
 color: white;
 z-index: 3;
 font-size: 36px;
-background: rgba(0,0,0,0.6);
+background: rgba(0,0,0,0.8);
 padding-right: 20px;
 padding-left: 20px;
 
