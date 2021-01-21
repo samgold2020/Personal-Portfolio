@@ -4,9 +4,10 @@ import { FaBars } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 import {
  NavWrapper,
+ NavContainer,
  NavContent,
  NavLinks,
-//  MobileIcon,
+ MobileIcon,
 //  NavMenu,
 //  NavLinks,
 } from './navbar-style';
@@ -17,8 +18,12 @@ const Navbar = ({ toggle }) => {
 
   return (
     <NavWrapper>
-    <NavContent class="home">
-    <Link
+      <NavContainer>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
+    <NavContent className="home">
+    <Link className="NavLinks"
         activeClass="active"
         to="home"
         spy={true}
@@ -55,6 +60,7 @@ const Navbar = ({ toggle }) => {
         > Contact
           </Link>
     </NavContent>
+    </NavContainer>
     </NavWrapper>
   )
 }

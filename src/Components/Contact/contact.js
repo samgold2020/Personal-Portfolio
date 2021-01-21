@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import {
-  Container,
-  Wrapper,
+  ContactWrapper,
+  ContactContainer,
   Row,
   ColumnOne,
-  Form,
+	Form,
+	Title,
   Label,
   InputTextArea,
   FormButton,
@@ -17,12 +18,12 @@ const Contact = () => {
 	const [email, setEmail] = useState();
 
 	return (
-		<Container altBg={true} id='contact'>
-			<Wrapper>
+		<ContactWrapper altBg={true} id='contact'>
+			<ContactContainer>
 				<Row imgPosition={true}>
 					<ColumnOne>
 						<Form>
-							<h1>Contact Me:</h1>
+							<Title>Let's Talk!</Title>
 							<Label htmlFor='name'>Name:</Label>
 							<InputTextArea
 								type='text'
@@ -57,8 +58,8 @@ const Contact = () => {
 						</Form>
 					</ColumnOne>
 				</Row>
-			</Wrapper>
-		</Container>
+			</ContactContainer>
+		</ContactWrapper>
 	);
 };
 

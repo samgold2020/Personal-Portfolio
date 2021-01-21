@@ -57,9 +57,9 @@ const Skills = () => {
       <SkillsLogo>
         <Img src={NodeJS}>
           </Img></SkillsLogo>
-      <SkillsLogo>
+      {/* <SkillsLogo>
         <Img src={SASS}>
-          </Img></SkillsLogo>
+          </Img></SkillsLogo> */}
 
           </SkillsList>
 

@@ -20,8 +20,8 @@ const Projects = () => {
  
   return (
     <ProjectsWrapper className="projects">
-      <ProjectsTitle> My Work</ProjectsTitle>
       <ProjectsLine></ProjectsLine>
+      <ProjectsTitle> My Work</ProjectsTitle>
     <ProjectsContainer>
       <ProjectCard>
       <Img src={Steak}></Img>

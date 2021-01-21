@@ -13,6 +13,21 @@ cursor: pointer;
 color: white;
 `;
 
+export const NavContainer = styled.div``;
+export const MobileIcon = styled.div`
+display: none;
+
+@media screen and (max-width: 768px) {
+  display: block;
+  // position: absolute;
+  top: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+`;
+
 export const NavContent = styled.ul`
 text-decoration: none;
 list-style-type: none;
@@ -22,14 +37,12 @@ align-items: center;
 width: 700px;
 color: white;
 
-// ONSCROLL
-// position: fixed;
-// top: 0;
+@media screen and (max-width: 768px) {
+  display: none;
+}
   `;
 
-export const NavLinks = styled.li`
-font-size: 36px;
-`;
+export const NavLinks = styled.li``;
 
 // Link > .active {
 //   border-bottom: 1px solid #333;

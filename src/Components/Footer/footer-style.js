@@ -4,16 +4,21 @@ import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 export const FooterWrapper = styled.div`
-bottom: 0;
-right: 0;
-// width: 100vw;
-height: 80px;
-background-color: blue;
 display: flex;
 justify-content: center;
+position: relative;
+
+bottom: 0;
+left: 0;
+
+height: 80px;
 align-items: center;
+border-top: 2px solid black;
 
 `;
+
+export const FooterContainer = styled.div``;
+
 export const FooterLinks = styled.ul`
 display: flex;
 justify-content: space-around;
@@ -23,20 +28,16 @@ justify-content: space-around;
 
 export const Button = styled.a`
  display: flex;
-//  width: 100px;
-//  align-items: center;
  text-decoration: none;
  border-radius: 50px;
  background ${({primary}) => (primary ? '#fff' : '#000000')};
-//  white-space: nowrap;
  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
  color ${({dark}) => (dark ? '#010606' : '#fff')};
  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-//  outline: none;
-//  border: none;
  cursor: pointer;
  transition: all 0.2s ease-in-out;
-
+margin-left: 80px;
+margin-right: 80px;
  &:hover  {
   transition: all 0.2s ease-in-out;
   background ${({primary}) => (primary ? '#fff' :'#024662')};

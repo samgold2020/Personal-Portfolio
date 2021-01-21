@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 import {
   FooterWrapper,
+  FooterContainer,
   FooterLinks,
   Button,
   ArrowForward,
@@ -14,6 +15,7 @@ import {
 const footer = ({ onHover, hover }) => {
   return (
     <FooterWrapper>
+      <FooterContainer>
         <FooterLinks>
         <Button 
           href='https://github.com/samgold2020'
@@ -31,7 +33,8 @@ const footer = ({ onHover, hover }) => {
           onMouseLeave={onHover}> 
          Linkedin  {hover ? <ArrowForward /> : <ArrowRight />} 
           </Button>
-        </FooterLinks>
+    
+        <Button>
         <Link
         activeClass="active"
         to="home"
@@ -41,6 +44,9 @@ const footer = ({ onHover, hover }) => {
         duration={500}  
         > Top
           </Link>
+          </Button>
+          </FooterLinks>
+          </FooterContainer>
     </FooterWrapper>
   )
 }
