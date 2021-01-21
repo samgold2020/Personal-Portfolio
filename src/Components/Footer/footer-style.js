@@ -3,36 +3,37 @@ import { Link } from 'react-router-dom';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
-
-
 export const FooterWrapper = styled.div`
 bottom: 0;
 right: 0;
-width: 100vw;
-height: 100px;
-background-color: green;
-z-index: 1;
+// width: 100vw;
+height: 80px;
+background-color: blue;
 display: flex;
 justify-content: center;
 align-items: center;
+
 `;
-export const Footer = styled.div``;
-export const FooterLinks = styled.div``;
+export const FooterLinks = styled.ul`
+display: flex;
+justify-content: space-around;
+
+`;
 
 
-export const Button = styled(Link)`
+export const Button = styled.a`
  display: flex;
- width: 100px;
- align-items: center;
+//  width: 100px;
+//  align-items: center;
  text-decoration: none;
  border-radius: 50px;
  background ${({primary}) => (primary ? '#fff' : '#000000')};
- white-space: nowrap;
+//  white-space: nowrap;
  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
  color ${({dark}) => (dark ? '#010606' : '#fff')};
  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
- outline: none;
- border: none;
+//  outline: none;
+//  border: none;
  cursor: pointer;
  transition: all 0.2s ease-in-out;
 
@@ -44,7 +45,7 @@ export const Button = styled(Link)`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
- margin-left: 8px;
+ margin-left: 15px;
  font-size: 20px;
 `;
 

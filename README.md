@@ -5,11 +5,10 @@
 Information about the application.
 
 Main purpose:
-* Purpose 1
-* Purpose 2
-* Purpose 3
+* Personal Portfolio 
 
-Summary
+Summary: 
+
 
 ### Built With
 
@@ -88,7 +87,7 @@ Any licenses will go here. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter](https://twitter.com/your_username) - email@example.com
+Sam Goldstein - [@twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -96,12 +95,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Othneil Drew](https://github.com/othneildrew/)
-
+* [Icon Finder](https://www.iconfinder.com/)
 
 
 # Image Download: 

@@ -4,6 +4,12 @@ import Html from '../../images/HTML.png';
 import CSS from '../../images/CSS.png';
 import ReactImage from '../../images/React.png';
 import MongoDB from '../../images/MongoDB.png';
+import Django from '../../images/django.png';
+import Python from '../../images/Python.png';
+import mySQL from '../../images/mySQL.svg';
+import NodeJS from '../../images/NodeJS.svg';
+import SASS from '../../images/SASS.png';
+import Github from '../../images/Github.png';
 import {
   SkillsWrapper,
   SkillsTitle,
@@ -19,14 +25,17 @@ const Skills = () => {
       <SkillsTitle>My Skills</SkillsTitle>
       <SkillsList>
       <SkillsLogo>
-      <Img src={Javascript}></Img>
-      </SkillsLogo>
-      <SkillsLogo>
         <Img src={Html}>
-          </Img></SkillsLogo>
+          </Img>
+          </SkillsLogo>
       <SkillsLogo>
         <Img src={CSS}>
-          </Img></SkillsLogo>
+          </Img>
+          </SkillsLogo>
+      <SkillsLogo>
+      <Img src={Javascript}>
+      </Img>
+      </SkillsLogo>
       <SkillsLogo>
         <Img src={ReactImage}>
           </Img></SkillsLogo>
@@ -34,21 +43,26 @@ const Skills = () => {
         <Img src={MongoDB}>
           </Img></SkillsLogo>
       <SkillsLogo>
-        <Img src={Html}>
+        <Img src={Django}>
           </Img></SkillsLogo>
       <SkillsLogo>
-        <Img src={Html}>
+        <Img src={Python}>
           </Img></SkillsLogo>
       <SkillsLogo>
-        <Img src={Html}>
+        <Img src={mySQL}>
           </Img></SkillsLogo>
       <SkillsLogo>
-        <Img src={Html}>
+        <Img src={Github}>
           </Img></SkillsLogo>
       <SkillsLogo>
-        <Img src={Html}>
+        <Img src={NodeJS}>
           </Img></SkillsLogo>
+      <SkillsLogo>
+        <Img src={SASS}>
+          </Img></SkillsLogo>
+
           </SkillsList>
+
     </SkillsWrapper>
   )
 }

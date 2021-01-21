@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AboutWrapper =styled.div`
 padding: 60px 60px;
+min-height: 50vh;
 `;
 
 export const AboutContainer =styled.div`
@@ -26,6 +27,7 @@ align-self: center;
 `;
 
 export const NameP = styled.p`
+// position: absolute
 grid-column: 2/4;
 font-size: 60px;
 justify-content: beginning;
