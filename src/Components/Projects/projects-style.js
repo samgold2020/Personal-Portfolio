@@ -1,30 +1,25 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 
 
 export const ProjectsWrapper = styled.div`
-min-height: 50vh;
+min-height: 100vh;
+background-color: #1E272E;
+padding-top: 1vh;
 `;
 
 export const ProjectsTitle = styled.p`
 font-size: 56px;
 display: flex;
 justify-content: center;
-`;
+color: white;
 
-export const ProjectsLine = styled.div`
-// display: flex;
-// justify-content: center;
-// border-left: 1px solid grey;
-// position: absolute;
-// left: 50%;
-// height: 100px;
 `;
 
 export const ProjectsContainer = styled.div`
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-padding: 30px;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-gap: 10px;
 
 
 
@@ -44,13 +39,13 @@ padding: 30px;
   export const ProjectCard = styled.div`
   text-align: center;
   display: grid;
-  grid-template-rows: 240px auto 60px;
+  // grid-template-rows: 240px auto 60px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
   
   
-  width: 420px;
+  width: 90%;
   height: 620px;
-  border: solid white 2px;
+  border: solid white 6px;
   justify-self: center;
   
   @media screen and (max-width: 768px) {
@@ -61,8 +56,8 @@ padding: 30px;
   `;
   
 export const Img = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  // height: 100%;
 
   
 `;

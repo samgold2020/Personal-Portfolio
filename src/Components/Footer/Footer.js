@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+// import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import {

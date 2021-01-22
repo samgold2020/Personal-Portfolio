@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export  const ContactWrapper = styled.div`
 	color: white;
 
-	padding-top: 10vh;
-	padding-bottom: 10vh;
+
 
 	@media screen and (max-width: 780px) {
 		padding: 100px 0;
@@ -12,6 +11,9 @@ export  const ContactWrapper = styled.div`
 `;
 
 export const ContactContainer = styled.div`
+background-color: #1E272E;
+padding-top: 10vh;
+padding-bottom: 10vh;
 
 `;
 
@@ -57,8 +59,9 @@ export const Form = styled.form`
 
 export const Label = styled.label`
 	color: #d9d5b6;
-	font-size: 14px;
+	font-size: 24px;
 	margin-bottom: 8px;
+	margin-top: 8px;
 `;
 
 export const InputSelect = styled.select`
@@ -82,4 +85,5 @@ export const FormButton = styled.button`
 export const InputTextArea = styled.textarea`
 	width: 100%;
 	resize: none;
+	font-size: 24px;
 `;

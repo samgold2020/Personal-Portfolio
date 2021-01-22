@@ -4,13 +4,11 @@ import Steak from '../../images/Steak.png';
 import {
   ProjectsWrapper,
   ProjectsTitle,
-  ProjectsLine,
   ProjectsContainer,
   ProjectCard,
   ProjectContents,
   ProjectTitle,
   ProjectDescription,
-  Text,
   Img,
   ProjectLink,
 } from './projects-style';
@@ -19,9 +17,8 @@ const Projects = () => {
 
  
   return (
-    <ProjectsWrapper className="projects">
-      <ProjectsLine></ProjectsLine>
-      <ProjectsTitle> My Work</ProjectsTitle>
+    <ProjectsWrapper>
+      <ProjectsTitle className="projects"> My Work</ProjectsTitle>
     <ProjectsContainer>
       <ProjectCard>
       <Img src={Steak}></Img>
@@ -35,7 +32,7 @@ const Projects = () => {
         area-label="921Steak">View the project</ProjectLink>
       </ProjectCard>
 
-      <ProjectCard>
+      {/* <ProjectCard>
       <Img src={Flipcards}></Img>
       <ProjectContents>
       <ProjectTitle>FLIPCARDS</ProjectTitle>
@@ -45,16 +42,16 @@ const Projects = () => {
         href='https://samgold2020.github.io/Flipcards/level-one.html'
         target="_blank"
         area-label="Flipcards">View the Project</ProjectLink>
-      </ProjectCard>
+      </ProjectCard> */}
 
-      <ProjectCard>
+      {/* <ProjectCard>
       <Img src={Flipcards}></Img>
       <ProjectContents>
       <ProjectTitle>Recipes for Two</ProjectTitle>
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
         </ProjectContents>
         <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
-      </ProjectCard>
+      </ProjectCard> */}
       
     </ProjectsContainer>
     </ProjectsWrapper>

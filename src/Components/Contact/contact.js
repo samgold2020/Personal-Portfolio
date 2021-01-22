@@ -18,12 +18,12 @@ const Contact = () => {
 	const [email, setEmail] = useState();
 
 	return (
-		<ContactWrapper altBg={true} id='contact'>
+		<ContactWrapper altBg={true}>
 			<ContactContainer>
 				<Row imgPosition={true}>
 					<ColumnOne>
 						<Form>
-							<Title>Let's Talk!</Title>
+							<Title id='contact'>Let's Talk!</Title>
 							<Label htmlFor='name'>Name:</Label>
 							<InputTextArea
 								type='text'

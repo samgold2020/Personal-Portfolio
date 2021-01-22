@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SkillsWrapper = styled.div`
 min-height: 50vh;
+padding-bottom: 10vh;
 
 @media screen and (max-width: 780px) {
   padding: 10vh;
@@ -63,7 +64,7 @@ align-items: center;
 export const Img = styled.img`
 background-color: grey;
 border-radius: 10px;
-padding: 40px 50px;
+padding: 40px 60px;
 width: 150px;
 height: 150px;
 

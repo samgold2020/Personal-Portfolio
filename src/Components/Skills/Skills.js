@@ -8,7 +8,7 @@ import Django from '../../images/django.png';
 import Python from '../../images/Python.png';
 import mySQL from '../../images/mySQL.svg';
 import NodeJS from '../../images/NodeJS.svg';
-import SASS from '../../images/SASS.png';
+// import SASS from '../../images/SASS.png';
 import Github from '../../images/Github.png';
 import {
   SkillsWrapper,

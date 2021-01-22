@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+// import { Link as LinkR } from 'react-router-dom';
+// import { Link as LinkS } from 'react-scroll';
 
 export const NavWrapper = styled.div`
+position: sticky;
+top: 0;
+z-index: 20;
+`;
+
+export const NavContainer = styled.div`
 display: flex;
 justify-content: center;
 position: absolute;
@@ -13,7 +19,6 @@ cursor: pointer;
 color: white;
 `;
 
-export const NavContainer = styled.div``;
 export const MobileIcon = styled.div`
 display: none;
 
@@ -42,8 +47,5 @@ color: white;
 }
   `;
 
-export const NavLinks = styled.li``;
+export const Link = styled.li``;
 
-// Link > .active {
-//   border-bottom: 1px solid #333;
-// }

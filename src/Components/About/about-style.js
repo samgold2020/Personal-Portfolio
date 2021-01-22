@@ -1,45 +1,55 @@
 import styled from 'styled-components';
 
 export const AboutWrapper =styled.div`
-padding: 60px 60px;
-min-height: 50vh;
+padding: 0 60px;
+min-height: 100vh;
+`;
+
+export const AboutTitle = styled.p`
+font-size: 68px;
+display: flex;
+justify-content: center;
 `;
 
 export const AboutContainer =styled.div`
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
+grid-template-columns: repeat(2, 1fr);
 background-color: white;
-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
-padding: 80px 80px;
-// border: 9px solid green;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px 30px;
+padding: 20px 40px;
 
-// height: 590px;
-// width: 100%;
+`;
+
+export const ImgWrapper = styled.div`
+display: grid;
+justify-content:center;
 `;
 
 export const Img = styled.img`
+justify-content: center;
 grid-column: 1;
-border-radius: 50%;
-width: 200px;
-height: 200px;
-align-self: center;
-`;
-
-export const NameP = styled.p`
-// position: absolute
-grid-column: 2/4;
-font-size: 60px;
-justify-content: beginning;
-align-self: center;
+grid-row: 1;
+border-radius: 15%;
+width: 400px;
+height: 500px;
+padding: 40px;
 
 `;
+
+
 export const Description = styled.p`
-grid-row: 2;
-grid-column: 1/4;
+display: grid;
+grid-column: 2;
+align-items: center;
 font-size: 36px;
 
 `;
 
+// export const FunFacts = styled.p`
+// font-size: 36px;
+// grid-column: 1/4;
+
+
+// `;
 
 
