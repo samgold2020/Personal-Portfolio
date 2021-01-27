@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const NavWrapper = styled.div`
 position: sticky;
 top: 0;
-z-index: 20;
+z-index: 10;
 `;
 
 export const NavContainer = styled.div`
@@ -39,8 +39,11 @@ list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 700px;
+width: 450px;
 color: white;
+font-size: 28px;
+
+
 
 @media screen and (max-width: 768px) {
   display: none;

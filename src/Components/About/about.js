@@ -8,19 +8,37 @@ import {
   Description,
   ImgWrapper,
   Img,
+  DetailsWrapper,
+  DetailsContainer,
+  DetailOne,
+  DetailTwo,
+  DetailThree,
+  DetailFour,
+  // DetailFive,
+  // DetailSix,
+
 } from './about-style';
 
 const About = () => {
   return (
-    <AboutWrapper className="about">
-      <AboutTitle>Hi, I'm Sam!</AboutTitle>
+    <AboutWrapper>
       <AboutContainer>
+      <AboutTitle className="about">Hi, I'm Sam!</AboutTitle>
         <ImgWrapper>
         <Img src={Toby}></Img>
         </ImgWrapper>
-          <Description>I am a fullstack software engineer with a passionate for building software that aims to improve the lives of others. As a lifelong student I am always hard at work gaining new skills and perfecting old ones.</Description>
-          {/* <FunFacts>During my free time I enjoy walking my cat, Toby Keith, reading, and soaking in the sun(lamp) depending on the time of year.</FunFacts> */}
+          <Description>I am a fullstack software engineer with a passion for building software that aims to improve the lives of others. As a lifelong student I am always hard at work gaining new skills and perfecting old ones.</Description>
       </AboutContainer>
+      <DetailsWrapper>
+      <DetailsContainer>
+        <DetailOne>Test</DetailOne>
+        <DetailTwo>Test</DetailTwo>
+        <DetailThree>Test</DetailThree>
+        <DetailFour>Test</DetailFour>
+        {/* <DetailFive>Test</DetailFive>
+        <DetailSix>Test</DetailSix> */}
+      </DetailsContainer>
+     </DetailsWrapper>
     </AboutWrapper>
   )
 }

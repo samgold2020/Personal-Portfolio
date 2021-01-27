@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdArrowUpward } from 'react-icons/md';
 // import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -9,6 +10,7 @@ import {
   Button,
   ArrowForward,
   ArrowRight,
+  ArrowUp,
 
 } from './footer-style';
 
@@ -42,7 +44,9 @@ const footer = ({ onHover, hover }) => {
         smooth={true}
         offset={-70}
         duration={500}  
-        > Top
+        onMouseEnter={onHover} 
+        onMouseLeave={onHover}>
+        Top  {hover ? <MdArrowUpward  /> : <ArrowUp /> } 
           </Link>
           </Button>
           </FooterLinks>

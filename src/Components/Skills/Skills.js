@@ -13,6 +13,7 @@ import Github from '../../images/Github.png';
 import {
   SkillsWrapper,
   SkillsTitle,
+  SkillsContainer,
   SkillsList,
   SkillsLogo,
   Img,
@@ -23,45 +24,44 @@ const Skills = () => {
   return (
     <SkillsWrapper>
       <SkillsTitle>My Skills</SkillsTitle>
+      <SkillsContainer>
       <SkillsList>
       <SkillsLogo>
-        <Img src={Html}>
-          </Img>
+        <Img src={Html}/>
           </SkillsLogo>
       <SkillsLogo>
-        <Img src={CSS}>
-          </Img>
+        <Img src={CSS}/>
           </SkillsLogo>
       <SkillsLogo>
-      <Img src={Javascript}>
-      </Img>
+      <Img src={Javascript}/>
       </SkillsLogo>
       <SkillsLogo>
-        <Img src={ReactImage}>
-          </Img></SkillsLogo>
+        <Img src={ReactImage}/>
+      </SkillsLogo>
       <SkillsLogo>
-        <Img src={MongoDB}>
-          </Img></SkillsLogo>
+        <Img src={MongoDB}/>
+          </SkillsLogo>
       <SkillsLogo>
-        <Img src={Django}>
-          </Img></SkillsLogo>
+        <Img src={Django}/>
+          </SkillsLogo>
       <SkillsLogo>
-        <Img src={Python}>
-          </Img></SkillsLogo>
+        <Img src={Python}/>
+          </SkillsLogo>
       <SkillsLogo>
-        <Img src={mySQL}>
-          </Img></SkillsLogo>
+        <Img src={mySQL}/>
+          </SkillsLogo>
       <SkillsLogo>
-        <Img src={Github}>
-          </Img></SkillsLogo>
+        <Img src={Github}/>
+          </SkillsLogo>
       <SkillsLogo>
-        <Img src={NodeJS}>
-          </Img></SkillsLogo>
+        <Img src={NodeJS}/>
+          </SkillsLogo>
       {/* <SkillsLogo>
         <Img src={SASS}>
           </Img></SkillsLogo> */}
 
           </SkillsList>
+          </SkillsContainer>
 
     </SkillsWrapper>
   )
