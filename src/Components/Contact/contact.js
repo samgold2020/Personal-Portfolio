@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import {
   ContactWrapper,
   ContactContainer,
-  Row,
-  ColumnOne,
+	ContactDetails,
+	Social,
+	SocialLinks,
 	Form,
 	Title,
   Label,
@@ -18,16 +19,23 @@ const Contact = () => {
 	const [email, setEmail] = useState();
 
 	return (
-		<ContactWrapper altBg={true} >
-			<ContactContainer>
-				<Row imgPosition={true}>
-					<ColumnOne>
+		<ContactWrapper>
+			<ContactContainer className="contact">
+				<ContactDetails>
+					<Social>
+						<div>Social:</div>
+						<SocialLinks>Linkedin</SocialLinks>
+						<SocialLinks>Github</SocialLinks>
+						<SocialLinks>CodePen</SocialLinks>
+						<SocialLinks>Something</SocialLinks>
+						</Social>
+					</ContactDetails>
 						<Form>
 							<Title id='contact'>Let's Talk!</Title>
 							<Label htmlFor='name'>Name:</Label>
 							<InputTextArea
 								type='text'
-								rows='3'
+								rows='2'
 								name='name'
 								id='name'
 								form='nameform'
@@ -37,7 +45,7 @@ const Contact = () => {
 							<Label htmlFor='email'>Email:</Label>
 							<InputTextArea
 								type='text'
-								rows='3'
+								rows='2'
 								name='email'
 								id='email'
 								form='emailform'
@@ -56,8 +64,6 @@ const Contact = () => {
 							/>
 							<FormButton>Submit</FormButton>
 						</Form>
-					</ColumnOne>
-				</Row>
 			</ContactContainer>
 		</ContactWrapper>
 	);

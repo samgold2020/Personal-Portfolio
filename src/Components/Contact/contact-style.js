@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export  const ContactWrapper = styled.div`
-	color: white;
+min-height: 50vh;
+background-color: #1E272E;
+padding-top: 5px;
+padding-bottom: 5vh;
+
 
 	@media screen and (max-width: 780px) {
 		padding: 100px 0;
@@ -9,32 +13,41 @@ export  const ContactWrapper = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-background-color: #1E272E;
-padding-top: 10vh;
-padding-bottom: 10vh;
-
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+height: 100%;
+padding: 10vh 0;
 `;
 
-export const Row = styled.div`
-
+export const ContactDetails = styled.div`
+display: flex;
+justify-content: center;
+text-align: center;
 `;
 
-export const ColumnOne = styled.div`
-	// grid-area: col1;
-	// margin-bottom: 15px;
-	// padding: 0 15px;
+export const Social = styled.ul`
+color: white;
+text-decoration: none;
 `;
+export const SocialLinks = styled.li`
+color: white;
+list-style: none;
+font-size: 36px;
+padding: 60px 0;
+
+&:hover{
+	color: green;
+	cursor: pointer;
+}
+`;
+
+
 
 export const Title = styled.div`
 display: flex;
 justify-content: center;
+color: white;
 font-size: 48px;
-`;
-
-export const ColumnTwo = styled.div`
-	// grid-area: col2;
-	// margin-bottom: 15px;
-	// padding: 0 15px;
 `;
 
 
@@ -42,10 +55,11 @@ export const ColumnTwo = styled.div`
 export const Form = styled.form`
 	background: black;
 	border-radius: 12px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-	display: grid;
-	height: auto;
-	margin: 0 auto;
+	// box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+	// display: grid;
+	grid-column: 2;
+	// height: auto;
+	// margin: 0 auto;
 	max-width: 400px;
 	padding: 50px 50px;
 	width: 100%;
@@ -78,6 +92,13 @@ export const FormButton = styled.button`
 	font-size: 30px;
 	padding: 16px 0;
 	margin-top: 20px;
+
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background: #646c79; // black coral 
+		color: #e1e2e2; // platinum 
+		outline: 5px solid #e1e2e2; // platinum 
+	}
 `;
 
 export const InputTextArea = styled.textarea`

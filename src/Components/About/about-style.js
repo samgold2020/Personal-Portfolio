@@ -46,11 +46,15 @@ top: 0;
 
 
 export const Description = styled.p`
-display: grid;
 font-size: 36px;
 `;
 
+export const SocialLinks = styled.a`
+font-size: 64px;
+color: black;
+padding: 50px 150px 50px 220px;
 
+`;
 
  export const DetailsWrapper = styled.div`
  display: flex;
@@ -65,12 +69,13 @@ font-size: 36px;
  grid-column-gap: 80px;
  grid-row-gap: 40px;
  `;
- export const DetailOne= styled.div`
-//  display: grid;
-//  justify-content: center;
+
+export const DetailOne= styled.div`
+ display: flex;
+ align-items: center;
  text-align: center;
  font-size: 24px;
- border-top: 6px solid #64cdcf;
+ border-top: 6px solid #64cdcf; //blue
  border-radius: 6px;
  grid-row: 2/4;
  padding: 10px;
@@ -82,36 +87,73 @@ font-size: 36px;
  &:hover {
   transform: scale(1.1);
   cursor: pointer;
-  background-color: #1E272E;
+  background-color: #1E272E; 
   border-top: none;
   color: white;
  `;
+
+
  export const DetailTwo= styled.div`
  display: grid;
- border-top: 4px solid #ca7d7f;
+ text-align: center;
+ align-items: center;
+ font-size: 24px;
+ border-top: 6px solid #ca7d7f; //red
  border-radius: 6px;
  grid-column: 2;
  grid-row: 1/3;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ transition: all 0.9s ease-in-out;
+
+ &:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #1E272E;
+  border-top: none;
+  color: white;
  `;
+
  export const DetailThree= styled.div`
  display: grid;
- border-top: 4px solid #edad48;
+ text-align: center;
+ align-items: center;
+ font-size: 24px;
+ border-top: 6px solid #edad48; //orange
  border-radius: 6px;
  grid-column: 2;
  grid-row: 3/5;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ transition: all 0.9s ease-in-out;
+
+ &:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #1E272E;
+  border-top: none;
+  color: white;
  `;
+
  export const DetailFour= styled.div`
  display: grid;
- border-top: 4px solid #60a4da;
+ text-align: center;
+ align-items: center;
+ font-size: 24px;
+ border-top: 6px solid #60a4da; //blue
  border-radius: 6px;
  grid-column: 3;
  grid-row: 2/4;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ transition: all 0.9s ease-in-out;
+
+ &:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #1E272E;
+  border-top: none;
+  color: white;
  `;
  export const DetailFive= styled.div``;
  export const DetailSix= styled.div``;

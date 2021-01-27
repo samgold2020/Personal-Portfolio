@@ -37,6 +37,7 @@ export const ProjectsContent = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 800px);
 grid-template-rows: repeat(2, 1fr);
+grid-row-gap: 40px;
 
 
 @media screen and (max-width: 1200px) {
@@ -125,3 +126,32 @@ text-decoration: none;
 color: black;
 `;
 
+export const H1 = styled.h1`
+	font-size: 2.5rem;
+	color: #e1e2e2;
+	@media screen and (max-width: 780px) {
+		margin-bottom: -10px;
+	}
+	@media screen and (max-width: 480px) {
+		font-size: 2rem;
+	}
+`;
+
+export const Wrapper = styled.div`
+	max-width: 1000px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-gap: 16px;
+	padding: 0 50px;
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: 1fr 1fr;
+		padding-bottom: 100px;
+		padding-top: 20px;
+	}
+	@media screen and (max-width: 780px) {
+		grid-template-columns: 1fr;
+		padding: 30px 20px;
+	}
+`;

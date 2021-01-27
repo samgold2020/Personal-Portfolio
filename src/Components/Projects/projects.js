@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Flipcards from '../../Videos/Flipcards.png';
 // import Steak from '../../images/Steak.png';
 import CardFront from '../../images/red_card_front.svg';
@@ -18,13 +18,21 @@ import {
   ProjectLink,
 } from './projects-style';
 
-const Projects = () => {
+const Projects = ({ project, setProject }) => {
 
  
   return (
     <ProjectsWrapper>
-      <ProjectsTitle className="projects"> My Work</ProjectsTitle>
-    <ProjectsContainer>
+      <ProjectsTitle 
+      className="projects"
+      > My Work</ProjectsTitle>
+    <ProjectsContainer
+    data-aos='fade-right'
+    // data-aos-easing='ease-in-back'
+    data-aos-delay='300'
+    // data-aos-offset='0'
+    // data-aos-anchor-placement='center bottom'
+    >
       <ProjectsContent>
       <ProjectCard>
         <ProjectName>921Steak</ProjectName>
@@ -46,8 +54,16 @@ const Projects = () => {
 
       <ProjectCard>
       <ProjectName>FLIPCARDS</ProjectName>
-      <Img src={CardFront} alt="Card deck back"/>
-      <Img src={CardBack} alt="Card deck two of diamonds"/>
+      <Img 
+      src={CardFront} 
+      alt="Card deck back" 
+      data-aos="flip-left"
+      data-aos-delay='350'/>
+      <Img 
+      src={CardBack} 
+      alt="Card deck two of diamonds"
+      data-aos="flip-right"
+      data-aos-delay='450'/>
         <ProjectDescription>Test your memory with this Vanilla Javascript game! Flipcards features a dark/light mode toggle, </ProjectDescription>
         <ProjectLink 
         href='https://samgold2020.github.io/Flipcards/level-one.html'
@@ -61,6 +77,14 @@ const Projects = () => {
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
         <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
       </ProjectCard>
+
+      <ProjectCard>
+      <ProjectName>Recipes for Two</ProjectName>
+      <Img src={Flipcards}/>
+        <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
+        <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
+      </ProjectCard>
+      
       </ProjectsContent>
     </ProjectsContainer>
     </ProjectsWrapper>

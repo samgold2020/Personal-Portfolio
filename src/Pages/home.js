@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
@@ -9,19 +9,22 @@ import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import Skills from '../Components/Skills/Skills';
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const Home = () => {
-  const [ hover, setHover ] = useState(false)
-  const [ isOpen, setIsOpen ] = useState(false)
+  const [ hover, setHover ] = useState(false);
+  const [ isOpen, setIsOpen ] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+  const toggle = () => setIsOpen(!isOpen);
+  
 
-  const onHover = () => {
-    setHover(!hover)
-  }
-
+  const onHover = () => setHover(!hover);
+  
+	useEffect(() => {
+		Aos.init({});
+	}, []);
 
   return (
     <>
