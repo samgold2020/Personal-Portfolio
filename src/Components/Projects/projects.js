@@ -6,7 +6,6 @@ import {
   ProjectsTitle,
   ProjectsContainer,
   ProjectsContent,
-  // ProjectCardContainer,
   ProjectCard,
   ProjectName,
   SkillsContainer,
@@ -14,6 +13,7 @@ import {
   ProjectDescription,
   Img,
   ImgContainer,
+  LinksContainer,
   ProjectLink,
 } from './projects-style';
 
@@ -26,34 +26,42 @@ const Projects = ({ project, setProject }) => {
       className="projects"
       > My Work</ProjectsTitle>
     <ProjectsContainer
-    data-aos='fade-right'
-    // data-aos-easing='ease-in-back'
-    data-aos-delay='300'
-    // data-aos-offset='0'
-    // data-aos-anchor-placement='center bottom'
+    // data-aos='fade-right'
+    // data-aos-delay='300'
     >
       <ProjectsContent>
-        {/* <ProjectCardContainer> */}
       <ProjectCard>
         <ProjectName>921Steak</ProjectName>
         <ImgContainer>
+
+
+
+
+
+
       {/* <Img src={Restaurant}/> */}
       </ImgContainer>
       <SkillsContainer>
         <Skills><SiReact/><SiJavascript/><SiDjango/><SiPython/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>A fullstack restaurant website complete with mobile response, admin login and dummy OpenTable reservation widget. </ProjectDescription>
+        <LinksContainer>
         <ProjectLink 
         href='https://www.921steak.com/'
         target="_blank"
         area-label="921Steak">View the project</ProjectLink>
+        </LinksContainer>
+
+        <LinksContainer>
         <ProjectLink
                 href='https://github.com/REST-a-site'
                 target="_blank"
                 area-label="921Steak">View the Github Repo
         </ProjectLink>
+        </LinksContainer>
+
+        
       </ProjectCard>
-      {/* </ProjectCardContainer> */}
 
       <ProjectCard>
       <ProjectName>FLIPCARDS</ProjectName>
@@ -71,10 +79,10 @@ const Projects = ({ project, setProject }) => {
         <Skills><SiJavascript/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>Test your memory with this Vanilla Javascript game! Flipcards features a dark/light mode toggle, </ProjectDescription>
-        <ProjectLink 
+        {/* <ProjectLink 
         href='https://samgold2020.github.io/Flipcards/level-one.html'
         target="_blank"
-        area-label="Flipcards">View the Project</ProjectLink>
+        area-label="Flipcards">View the Project</ProjectLink> */}
       </ProjectCard>
 
       <ProjectCard>
@@ -84,14 +92,14 @@ const Projects = ({ project, setProject }) => {
         <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
+        {/* <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink> */}
       </ProjectCard>
 
       <ProjectCard>
       <ProjectName>Recipes for Two</ProjectName>
       {/* <Img src={Flipcards}/> */}
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
+        {/* <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink> */}
       </ProjectCard>
       
       </ProjectsContent>
