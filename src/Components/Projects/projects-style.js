@@ -53,20 +53,24 @@ grid-row-gap: 40px;
   //  }
   `;
 
-
+  // export const ProjectCardContainer = styled.div`
+  // display: flex;
+  // justify-content: center;
+  // `;
   
   export const ProjectCard = styled.div`
   text-align: center;
   background-color: white;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: 60px 1fr  1fr  1fr 60px  60px;
+  display: grid;
+  // // grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr  1fr  1fr 1fr;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
   
   
   width: 90%;
   height: 620px;
   border: solid white 3px;
+  border-radius: 10px;
   justify-self: center;
   
   @media screen and (max-width: 768px) {
@@ -77,20 +81,22 @@ grid-row-gap: 40px;
   `;
 
 export const ImgContainer = styled.div`
-background-color: white;
-
+// background-color: white;
+// display: grid;
+// grid-column: 1/3;
+// grid-row: 2;
+display: flex;
+justify-content: center;
 `;
   
 export const Img = styled.img`
-// padding-top: 50px;
-// display: flex;
-// justify-content: center;
+grid-column: 1/3;
+
+// grid-column: 1/2;
+
 padding: 10px 10px;
   width: 20%;
-  // height: 100%;
 `;
-
-export const ProjectFramework = styled.div``;
 
 export const ProjectName = styled.h2`
 grid-column: 1/3;
@@ -104,19 +110,32 @@ export const ProjectDescription = styled.p`
 font-size: 24px;
 padding: 10px 30px;
 font-weight: bold;
-// grid-column: 2,
-// grid-row: 2/3;
+grid-row: 5;
+grid-column: 1/3;
 `;
 
+export const SkillsContainer = styled.div`
+grid-column: 1/3;
+grid-row: 4;
+align-self: center;
+border: 1px solid black;
+`;
+export const Skills = styled.div`
+font-size: 35px;
+display: flex;
+justify-content: space-around;
+padding: 20px 0;
+`;
 
 export const ProjectLink = styled.a`
 // display: grid;
 // grid-column: 2;
-// grid-row: 6;
+grid-row: 6;
 // align-self: center;
 // align-self: end;
 // display: flex;
 // justify-content: space-around;
+border-radius: 10px;
 padding: 10px 20px;
 font-size: 24px;
 cursor: pointer;
@@ -126,32 +145,5 @@ text-decoration: none;
 color: black;
 `;
 
-export const H1 = styled.h1`
-	font-size: 2.5rem;
-	color: #e1e2e2;
-	@media screen and (max-width: 780px) {
-		margin-bottom: -10px;
-	}
-	@media screen and (max-width: 480px) {
-		font-size: 2rem;
-	}
-`;
 
-export const Wrapper = styled.div`
-	max-width: 1000px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-	grid-gap: 16px;
-	padding: 0 50px;
-	@media screen and (max-width: 1000px) {
-		grid-template-columns: 1fr 1fr;
-		padding-bottom: 100px;
-		padding-top: 20px;
-	}
-	@media screen and (max-width: 780px) {
-		grid-template-columns: 1fr;
-		padding: 30px 20px;
-	}
-`;
+

@@ -15,6 +15,7 @@ Summary:
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [React](https://reactjs.org/)
 * [Styled Components](https://styled-components.com/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)
 
 
 <!-- GETTING STARTED -->
@@ -74,6 +75,7 @@ Explanation of about how to contribute and appreciations for future contribution
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+6. npm - i https://michalsnik.github.io/aos/
 
 
 

@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import Flipcards from '../../Videos/Flipcards.png';
-// import Steak from '../../images/Steak.png';
-import CardFront from '../../images/red_card_front.svg';
-import CardBack from '../../images/2_diamonds.svg';
-import Restaurant from '../../images/restaurant.png';
+import { SiJavascript, SiReact,  SiDjango, SiPython, SiHtml5, SiCss3} from 'react-icons/si';
+
 import {
   ProjectsWrapper,
   ProjectsTitle,
   ProjectsContainer,
   ProjectsContent,
+  // ProjectCardContainer,
   ProjectCard,
   ProjectName,
+  SkillsContainer,
+  Skills,
   ProjectDescription,
-  ProjectFramework,
   Img,
   ImgContainer,
   ProjectLink,
@@ -34,13 +33,16 @@ const Projects = ({ project, setProject }) => {
     // data-aos-anchor-placement='center bottom'
     >
       <ProjectsContent>
+        {/* <ProjectCardContainer> */}
       <ProjectCard>
         <ProjectName>921Steak</ProjectName>
         <ImgContainer>
-      <Img src={Restaurant}/>
+      {/* <Img src={Restaurant}/> */}
       </ImgContainer>
-        <ProjectDescription>Built using React, Djano and Python this fullstack restaurant website features a menu with full CRUD functinality, a login page with user authentifiction achieved through Django, and a dummy Opentable reservation widget for testing purposes. The design is mobile responsive, check it out!</ProjectDescription>
-        <ProjectFramework></ProjectFramework>
+      <SkillsContainer>
+        <Skills><SiReact/><SiJavascript/><SiDjango/><SiPython/><SiHtml5/><SiCss3/></Skills>
+      </SkillsContainer>
+        <ProjectDescription>A fullstack restaurant website complete with mobile response, admin login and dummy OpenTable reservation widget. </ProjectDescription>
         <ProjectLink 
         href='https://www.921steak.com/'
         target="_blank"
@@ -51,10 +53,11 @@ const Projects = ({ project, setProject }) => {
                 area-label="921Steak">View the Github Repo
         </ProjectLink>
       </ProjectCard>
+      {/* </ProjectCardContainer> */}
 
       <ProjectCard>
       <ProjectName>FLIPCARDS</ProjectName>
-      <Img 
+      {/* <Img 
       src={CardFront} 
       alt="Card deck back" 
       data-aos="flip-left"
@@ -63,7 +66,10 @@ const Projects = ({ project, setProject }) => {
       src={CardBack} 
       alt="Card deck two of diamonds"
       data-aos="flip-right"
-      data-aos-delay='450'/>
+      data-aos-delay='450'/> */}
+      <SkillsContainer>
+        <Skills><SiJavascript/><SiHtml5/><SiCss3/></Skills>
+      </SkillsContainer>
         <ProjectDescription>Test your memory with this Vanilla Javascript game! Flipcards features a dark/light mode toggle, </ProjectDescription>
         <ProjectLink 
         href='https://samgold2020.github.io/Flipcards/level-one.html'
@@ -73,14 +79,17 @@ const Projects = ({ project, setProject }) => {
 
       <ProjectCard>
       <ProjectName>Recipes for Two</ProjectName>
-      <Img src={Flipcards}/>
+      {/* <Img src={Flipcards}/> */}
+      <SkillsContainer>
+        <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
+      </SkillsContainer>
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
         <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
       </ProjectCard>
 
       <ProjectCard>
       <ProjectName>Recipes for Two</ProjectName>
-      <Img src={Flipcards}/>
+      {/* <Img src={Flipcards}/> */}
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
         <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink>
       </ProjectCard>
