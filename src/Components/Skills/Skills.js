@@ -8,7 +8,7 @@ import Django from '../../images/django.png';
 import Python from '../../images/Python.png';
 import mySQL from '../../images/mySQL.svg';
 import NodeJS from '../../images/NodeJS.svg';
-// import SASS from '../../images/SASS.png';
+import AWS from '../../images/AWS.png';
 import Github from '../../images/Github.png';
 import {
   SkillsWrapper,
@@ -23,7 +23,7 @@ import {
 const Skills = () => {
   return (
     <SkillsWrapper>
-      <SkillsTitle>My Skills</SkillsTitle>
+      <SkillsTitle className="skills">My Skills</SkillsTitle>
       <SkillsContainer>
       <SkillsList>
       <SkillsLogo>
@@ -56,9 +56,9 @@ const Skills = () => {
       <SkillsLogo>
         <Img src={NodeJS}/>
           </SkillsLogo>
-      {/* <SkillsLogo>
-        <Img src={SASS}>
-          </Img></SkillsLogo> */}
+      <SkillsLogo>
+        <Img src={AWS}/>
+          </SkillsLogo>
 
           </SkillsList>
           </SkillsContainer>

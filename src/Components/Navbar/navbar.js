@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
-    <NavContent className="home">
+    <NavContent>
     <Link className="NavLinks"
         activeClass="active"
         to="home"
@@ -63,6 +63,15 @@ const Navbar = ({ toggle }) => {
         offset={-70}
         duration={500}  
         > Projects
+          </Link>
+          <Link
+        activeClass="active"
+        to="skills"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}  
+        > Skills
           </Link>
           <Link
         activeClass="active"

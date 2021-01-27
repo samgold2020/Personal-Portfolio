@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export  const ContactWrapper = styled.div`
 	color: white;
 
-
-
 	@media screen and (max-width: 780px) {
 		padding: 100px 0;
 	}

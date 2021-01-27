@@ -12,11 +12,24 @@ export const NavContainer = styled.div`
 display: flex;
 justify-content: center;
 position: absolute;
-left: 60px;
-top: 40px;
+left: 0px;
+top: 10px;
+background-color: rgb(0,0,0,0.3);
+width: 650px;
 z-index: 1;
 cursor: pointer;
 color: white;
+animation: 1s ease-out 0s 1 slideInFromLeft;
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 `;
 
 export const MobileIcon = styled.div`
@@ -39,7 +52,7 @@ list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 450px;
+width: 550px;
 color: white;
 font-size: 28px;
 

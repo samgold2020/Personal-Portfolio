@@ -14,7 +14,7 @@ import {
 const Hero = () => {
   return (
     <HeroWrapper>
-    <HeroContainer>
+    <HeroContainer className="home">
       {/* <HeroBackground> */}
         <VideoContainer loop autoPlay>
         <source src={Video} type='video/mp4'/>

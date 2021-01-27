@@ -18,7 +18,7 @@ const Contact = () => {
 	const [email, setEmail] = useState();
 
 	return (
-		<ContactWrapper altBg={true}>
+		<ContactWrapper altBg={true} >
 			<ContactContainer>
 				<Row imgPosition={true}>
 					<ColumnOne>

@@ -5,20 +5,15 @@ padding: 60px 200px;
 min-height: 100vh;
 `;
 
-export const AboutTitle = styled.p`
-font-size: 48px;
-display: flex;
-justify-content: center;
-`;
-
 export const AboutContainer =styled.div`
 display: grid;
-grid-template-columns: 620px auto;
+grid-template-columns: 420px auto;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px 30px;
-padding: 10px 40px;
+padding: 0px 40px;
 border-radius: 10px;
 //specify the transition on the element itself for it to occur in both directions
 transition: all 0.9s ease-in-out;
+position: relative;
 
 
 &:hover {
@@ -28,28 +23,30 @@ transition: all 0.9s ease-in-out;
 
 `;
 
+export const AboutTitle = styled.p`
+font-size: 48px;
+grid-column: 1/3;
+text-align: center;
+`;
 
 export const ImgWrapper = styled.div`
-display: grid;
-justify-content: center;
+height: 300px;
+
 `;
 
 export const Img = styled.img`
-justify-content: center;
-grid-column: 1;
-grid-row: 1;
 border-radius: 55%;
-width: 400px;
-height: 500px;
-padding: 40px;
+width3 400px;
+height: 300px;
+padding: 80px;
+position: absolute;
+top: 0;
 
 `;
 
 
 export const Description = styled.p`
 display: grid;
-grid-column: 2/3;
-align-items: center;
 font-size: 36px;
 `;
 
@@ -58,30 +55,36 @@ font-size: 36px;
  export const DetailsWrapper = styled.div`
  display: flex;
  justify-content: center;
- padding-top: 50px;
+ padding-top: 60px;
  padding-bottom: 90px;
  `;
  export const DetailsContainer = styled.div`
  display: grid;
- grid-template-rows: repeat(4, 105px);
- grid-template-columns: repeat(3, 450px);
+ grid-template-rows: repeat(4, 150px);
+ grid-template-columns: repeat(3, 425px);
  grid-column-gap: 80px;
- grid-row-gap: 30px;
+ grid-row-gap: 40px;
  `;
  export const DetailOne= styled.div`
- display: grid;
- border-top: 4px solid #64cdcf;
+//  display: grid;
+//  justify-content: center;
+ text-align: center;
+ font-size: 24px;
+ border-top: 6px solid #64cdcf;
  border-radius: 6px;
  grid-row: 2/4;
- padding-right: 20px;
+ padding: 10px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
+ 
 
 
  &:hover {
   transform: scale(1.1);
   cursor: pointer;
-  color: #1E272E;
+  background-color: #1E272E;
+  border-top: none;
+  color: white;
  `;
  export const DetailTwo= styled.div`
  display: grid;

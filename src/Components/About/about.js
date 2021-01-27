@@ -31,10 +31,10 @@ const About = () => {
       </AboutContainer>
       <DetailsWrapper>
       <DetailsContainer>
-        <DetailOne>Test</DetailOne>
-        <DetailTwo>Test</DetailTwo>
-        <DetailThree>Test</DetailThree>
-        <DetailFour>Test</DetailFour>
+        <DetailOne>When I'm not at work I can be found reading, biking across Chicago, or spending time with my cat, Toby Keith. </DetailOne>
+        <DetailTwo>I enjoy cracking the code on CodeWars:</DetailTwo>
+        <DetailThree>Resume</DetailThree>
+        <DetailFour>I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!</DetailFour>
         {/* <DetailFive>Test</DetailFive>
         <DetailSix>Test</DetailSix> */}
       </DetailsContainer>
