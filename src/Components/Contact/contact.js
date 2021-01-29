@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import {
   ContactWrapper,
   ContactContainer,
-	ContactDetails,
-	Social,
-	SocialLinks,
 	Form,
 	Title,
   Label,
@@ -21,15 +18,6 @@ const Contact = () => {
 	return (
 		<ContactWrapper>
 			<ContactContainer className="contact">
-				<ContactDetails>
-					<Social>
-						<div>Social:</div>
-						<SocialLinks>Linkedin</SocialLinks>
-						<SocialLinks>Github</SocialLinks>
-						<SocialLinks>CodePen</SocialLinks>
-						<SocialLinks>Something</SocialLinks>
-						</Social>
-					</ContactDetails>
 						<Form>
 							<Title id='contact'>Let's Talk!</Title>
 							<Label htmlFor='name'>Name:</Label>

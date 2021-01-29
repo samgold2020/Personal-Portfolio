@@ -35,7 +35,7 @@ const Home = () => {
       <Projects />
       <Skills />
       <Contact />
-      <Footer onHover={onHover} hover={hover}/>
+      <Footer />
     </>
   )
 }
