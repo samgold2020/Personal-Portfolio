@@ -1,6 +1,6 @@
 import React from 'react';
 import Toby from '../../images/TobyKeith.jpeg';
-import { FaGithubSquare, FaLinkedin, FaCodepen } from 'react-icons/fa';
+import { FaLinkedin, FaCodepen } from 'react-icons/fa';
 
 import {
   AboutWrapper,
@@ -15,50 +15,59 @@ import {
   DetailOne,
   DetailTwo,
   DetailThree,
+  Button,
   DetailFour,
   // DetailFive,
   // DetailSix,
 
 } from './about-style';
 
+const data = {
+  title: "Hi, I'm Sam",
+  description: "I am a fullstack web developer based in Chicago, Il. I have a passion for building software that aims to improve the lives of others.",
+  detailOne: "When I'm not at work I can be found reading, riding my biking around Chicago, or spending time with my cat, Toby Keith.",
+  detailTwo: "I enjoy cracking the code on CodeWars:",
+  detailThree:"Contact Me",
+  detailFour: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!"
+}
+
 const About = () => {
   return (
     <AboutWrapper>
       <AboutContainer>
-      <AboutTitle className="about">Hi, I'm Sam!</AboutTitle>
+      <AboutTitle className="about">{data.title}</AboutTitle>
         <ImgWrapper>
-        <Img src={Toby}></Img>
+        <Img src={Toby}/>
         </ImgWrapper>
-          <Description>I am a fullstack web developer based in Chicago, Il. I have a passion for building software that aims to improve the lives of others.<Description></Description>
-          <SocialLinks
+        <Description>{data.description}</Description>
+          
+      </AboutContainer>
+      <DetailsWrapper>
+      <DetailsContainer>
+        <DetailOne>{data.detailOne}
+         <SocialLinks
           href='https://www.linkedin.com/in/sgoldstein312/'
           target='_blank'
           aria-label='LinkedIn'>
           <FaLinkedin />
           </SocialLinks>
+          </DetailOne>
 
-          <SocialLinks
-          href='https://github.com/samgold2020'
-          target='_blank'
-          aria-label='Github'>
-          <FaGithubSquare/>
-          </SocialLinks>
-
-          <SocialLinks
+        <DetailTwo>{data.detailTwo}
+          
+        </DetailTwo>
+        <DetailThree>
+          <Button>{data.detailThree}</Button>
+          </DetailThree>
+        <DetailFour>{data.detailFour}
+        <SocialLinks
           href='https://codepen.io/sjgold'
           target='_blank'
           aria-label='Codepen'>
           <FaCodepen/>
-          </SocialLinks>
-          
-          </Description>
-      </AboutContainer>
-      <DetailsWrapper>
-      <DetailsContainer>
-        <DetailOne>When I'm not at work I can be found reading, biking across Chicago, or spending time with my cat, Toby Keith. </DetailOne>
-        <DetailTwo>I enjoy cracking the code on CodeWars:</DetailTwo>
-        <DetailThree>Resume</DetailThree>
-        <DetailFour>I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!</DetailFour>
+          </SocialLinks> 
+        </DetailFour>
+
         {/* <DetailFive>Test</DetailFive>
         <DetailSix>Test</DetailSix> */}
       </DetailsContainer>

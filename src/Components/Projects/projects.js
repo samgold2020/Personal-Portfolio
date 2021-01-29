@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SiJavascript, SiReact,  SiDjango, SiPython, SiHtml5, SiCss3} from 'react-icons/si';
+import Restaurant from '../../images/restaurant.png';
+import CardFront from '../../images/red_card_front.svg';
+import CardBack from '../../images/2_diamonds.svg';
+
 
 import {
-  ProjectsWrapper,
+  ComponentWrapper,
   ProjectsTitle,
   ProjectsContainer,
   ProjectsContent,
@@ -17,29 +21,48 @@ import {
   ProjectLink,
 } from './projects-style';
 
-const Projects = ({ project, setProject }) => {
-
+const Projects = ( ) => {
  
   return (
-    <ProjectsWrapper>
+    <ComponentWrapper>
       <ProjectsTitle 
       className="projects"
       > My Work</ProjectsTitle>
     <ProjectsContainer
-    // data-aos='fade-right'
-    // data-aos-delay='300'
+    data-aos='fade-right'
+    data-aos-delay='300'
     >
+
       <ProjectsContent>
+      <ProjectCard>
+      <ProjectName>Portfolio</ProjectName>
+        <ImgContainer>
+      <Img src={Restaurant}/>
+      </ImgContainer>
+      <SkillsContainer>
+        <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
+      </SkillsContainer>
+        <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
+        <LinksContainer>
+
+        </LinksContainer>
+
+        <LinksContainer>
+        <ProjectLink
+                href='https://github.com/samgold2020/portfolio'
+                target="_blank"
+                area-label="Portfolio">View the Github Repo
+        </ProjectLink>
+        </LinksContainer>      
+        </ProjectCard>
+
+
+
+
       <ProjectCard>
         <ProjectName>921Steak</ProjectName>
         <ImgContainer>
-
-
-
-
-
-
-      {/* <Img src={Restaurant}/> */}
+      <Img src={Restaurant}/>
       </ImgContainer>
       <SkillsContainer>
         <Skills><SiReact/><SiJavascript/><SiDjango/><SiPython/><SiHtml5/><SiCss3/></Skills>
@@ -65,8 +88,9 @@ const Projects = ({ project, setProject }) => {
 
       <ProjectCard>
       <ProjectName>FLIPCARDS</ProjectName>
-      {/* <Img 
-      src={CardFront} 
+      <ImgContainer>
+      <Img 
+      src={CardFront}
       alt="Card deck back" 
       data-aos="flip-left"
       data-aos-delay='350'/>
@@ -74,37 +98,54 @@ const Projects = ({ project, setProject }) => {
       src={CardBack} 
       alt="Card deck two of diamonds"
       data-aos="flip-right"
-      data-aos-delay='450'/> */}
+      data-aos-delay='450'/>
+      </ImgContainer>
       <SkillsContainer>
         <Skills><SiJavascript/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>Test your memory with this Vanilla Javascript game! Flipcards features a dark/light mode toggle, </ProjectDescription>
-        {/* <ProjectLink 
+        <LinksContainer>
+        <ProjectLink 
         href='https://samgold2020.github.io/Flipcards/level-one.html'
         target="_blank"
-        area-label="Flipcards">View the Project</ProjectLink> */}
+        area-label="Flipcards">View the Project</ProjectLink>
+        </LinksContainer>
+
+        <LinksContainer>
+        <ProjectLink
+                href='https://github.com/samgold2020/Flipcards'
+                target="_blank"
+                area-label="921Steak">View the Github Repo
+        </ProjectLink>
+        </LinksContainer>
       </ProjectCard>
 
       <ProjectCard>
-      <ProjectName>Recipes for Two</ProjectName>
+      <ProjectName>Meals for Two</ProjectName>
       {/* <Img src={Flipcards}/> */}
       <SkillsContainer>
         <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        {/* <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink> */}
-      </ProjectCard>
+        <LinksContainer>
+        <ProjectLink 
+        href='https://github.com/samgold2020/MealsForYou'
+        target="_blank"
+        area-label="Flipcards">View the Project</ProjectLink>
+        </LinksContainer>
 
-      <ProjectCard>
-      <ProjectName>Recipes for Two</ProjectName>
-      {/* <Img src={Flipcards}/> */}
-        <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        {/* <ProjectLink to='https://samgold2020.github.io/Flipcards/level-one.html'>View the Project</ProjectLink> */}
+        <LinksContainer>
+        <ProjectLink
+                href='https://github.com/samgold2020/MealsForYou'
+                target="_blank"
+                area-label="921Steak">View the Github Repo
+        </ProjectLink>
+        </LinksContainer>
       </ProjectCard>
       
       </ProjectsContent>
     </ProjectsContainer>
-    </ProjectsWrapper>
+    </ComponentWrapper>
   )
 }
 

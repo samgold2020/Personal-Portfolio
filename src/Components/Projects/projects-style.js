@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-
-export const ProjectsWrapper = styled.div`
+// Component 
+export const ComponentWrapper = styled.div`
 min-height: 100vh;
-background-color: #1E272E;
+background-color: #1E272E; //dark blue
 padding-top: 5px;
 padding-bottom: 5vh;
 
 `;
-
+// Component title
 export const ProjectsTitle = styled.p`
 font-size: 56px;
 display: flex;
@@ -19,31 +19,30 @@ color: white;
 export const ProjectsContainer = styled.div`
 display: flex;
 justify-content: center;
-// animation: 1s ease-out 0s 1 slideInFromLeft;
 
-
-// @keyframes slideInFromLeft {
-//   0% {
-//     transform: translateX(-100%);
-//   }
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
 `;
 
 
 export const ProjectsContent = styled.div`
 display: grid;
-grid-template-columns: repeat(3, 800px);
+grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-row-gap: 40px;
 
 
-@media screen and (max-width: 1200px) {
-  grid-template-columns: 250px 250px 250px;
-  padding: 30px;
-  
+@media screen and (max-width: 1900px) {
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1000px) {
+  //hide sills and links?
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 1fr);
+}
+@media screen and (max-width: 1100px) {
+    
+
 }
 
 //  @media screen and (max-width: 768px) {
@@ -62,14 +61,19 @@ grid-row-gap: 40px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
-  
-  
   width: 90%;
   height: 620px;
   border: solid white 3px;
   border-radius: 10px;
   justify-self: center;
+  transition: all 0.9s ease-in-out;
+
+&:hover {
+  transform: scale(1.1);
+
   
+
+
   @media screen and (max-width: 768px) {
     width: 220px;
     height: 220px;
@@ -78,21 +82,11 @@ grid-row-gap: 40px;
   `;
 
 export const ImgContainer = styled.div`
-// background-color: white;
-// display: grid;
-// grid-column: 1/3;
-// grid-row: 2;
-display: flex;
-justify-content: center;
+grid-column: 1/3;
 `;
   
 export const Img = styled.img`
-grid-column: 1/3;
-
-// grid-column: 1/2;
-
-padding: 10px 10px;
-  width: 20%;
+width:120px;
 `;
 
 export const ProjectName = styled.h2`
@@ -106,7 +100,6 @@ padding: 10px 0px;
 export const ProjectDescription = styled.p`
 font-size: 24px;
 padding: 10px 30px;
-font-weight: bold;
 grid-row: 5;
 grid-column: 1/3;
 `;
@@ -127,28 +120,28 @@ padding: 20px 0;
 export const LinksContainer = styled.div`
 grid-row: 6;
 align-self: center;
-
-
 `;
 
 export const ProjectLink = styled.a`
-// grid-row: 6;
-// align-items: center;
-
-// // display: grid;
-// // grid-column: 2;
-// // grid-row: 6;
 border-radius: 10px;
 padding: 10px 20px;
 font-size: 24px;
 cursor: pointer;
-border: 3px solid black;
-// // background-color: white;
+border: 1px solid black;
 text-decoration: none;
 color: black;
+transition: all 0.4s ease-out;
+
 
 &:hover {
-  background-color: grey;
+  transition: all 0.6s ease-in;
+
+  background: #1E272E; // black coral 
+  color: white;
+  font-size: 28;
+  border: none;
+  // color: #e1e2e2; // platinum 
+  // outline: 5px solid #e1e2e2; // platinum 
 }
 `;
 

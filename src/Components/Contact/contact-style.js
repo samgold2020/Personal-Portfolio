@@ -34,8 +34,12 @@ color: white;
 list-style: none;
 font-size: 36px;
 padding: 60px 0;
+transition: all 0.9s ease-in-out;
+
 
 &:hover{
+	transform: scale(1.1);
+	font-size: 48px;
 	color: green;
 	cursor: pointer;
 }

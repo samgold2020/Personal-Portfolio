@@ -18,8 +18,6 @@ position: relative;
 
 &:hover {
   transform: scale(1.1);
-  cursor: pointer;
-  color: #1E272E;
 
 `;
 
@@ -49,12 +47,6 @@ export const Description = styled.p`
 font-size: 36px;
 `;
 
-export const SocialLinks = styled.a`
-font-size: 64px;
-color: black;
-padding: 50px 150px 50px 220px;
-
-`;
 
  export const DetailsWrapper = styled.div`
  display: flex;
@@ -62,23 +54,25 @@ padding: 50px 150px 50px 220px;
  padding-top: 60px;
  padding-bottom: 90px;
  `;
+
  export const DetailsContainer = styled.div`
  display: grid;
- grid-template-rows: repeat(4, 150px);
- grid-template-columns: repeat(3, 425px);
+//  grid-template-rows: repeat(4, 150px);
+ grid-template-columns: repeat(4, 425px);
  grid-column-gap: 80px;
  grid-row-gap: 40px;
  `;
 
 export const DetailOne= styled.div`
- display: flex;
- align-items: center;
+display: grid;
  text-align: center;
+//  align-items: center;
+ padding: 40px 0 0 40px;
  font-size: 24px;
- border-top: 6px solid #64cdcf; //blue
+ border-top: 6px solid #64cdcf; //teal
  border-radius: 6px;
- grid-row: 2/4;
- padding: 10px;
+ grid-column: 1;
+ padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
  
@@ -86,7 +80,6 @@ export const DetailOne= styled.div`
 
  &:hover {
   transform: scale(1.1);
-  cursor: pointer;
   background-color: #1E272E; 
   border-top: none;
   color: white;
@@ -101,7 +94,6 @@ export const DetailOne= styled.div`
  border-top: 6px solid #ca7d7f; //red
  border-radius: 6px;
  grid-column: 2;
- grid-row: 1/3;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -121,8 +113,7 @@ export const DetailOne= styled.div`
  font-size: 24px;
  border-top: 6px solid #edad48; //orange
  border-radius: 6px;
- grid-column: 2;
- grid-row: 3/5;
+ grid-column: 3;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -135,25 +126,35 @@ export const DetailOne= styled.div`
   color: white;
  `;
 
+ export const Button = styled.div`
+
+
+ `;
  export const DetailFour= styled.div`
  display: grid;
  text-align: center;
- align-items: center;
+ padding: 40px 0 0 40px;
  font-size: 24px;
  border-top: 6px solid #60a4da; //blue
  border-radius: 6px;
- grid-column: 3;
- grid-row: 2/4;
+ grid-column: 4;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
 
  &:hover {
   transform: scale(1.1);
-  cursor: pointer;
   background-color: #1E272E;
   border-top: none;
   color: white;
  `;
+
+ export const SocialLinks = styled.a`
+font-size: 84px;
+color: black;
+display: flex;
+align-self: flex-end;
+padding 0 20px 40px 0;
+`;
  export const DetailFive= styled.div``;
  export const DetailSix= styled.div``;
