@@ -69,16 +69,19 @@ font-size: 36px;
 
  export const DetailsContainer = styled.div`
  display: grid;
- grid-template-columns: repeat(4, 385px);
+ grid-template-columns: repeat(5, 450px);
  grid-column-gap: 80px;
  grid-gap: 40px;
 
- @media screen and (max-width: 1650px) {
-  grid-template-columns: repeat(2, 385px);
-}
+ @media screen and (max-width: 1450px) {
+  grid-template-columns: repeat(5, 350px);
+  }
 
-@media screen and (max-width: 1250px) {
-  grid-template-columns: repeat(2, 285px);
+@media screen and (max-width: 1100px) {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+
 }
  `;
 
@@ -90,12 +93,10 @@ display: grid;
  font-size: 24px;
  border-top: 6px solid #64cdcf; //teal
  border-radius: 6px;
-//  grid-column: 1;
+ grid-column: 2;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
- 
-
 
  &:hover {
   transform: scale(1.1);
@@ -104,16 +105,28 @@ display: grid;
   color: white;
  `;
 
+ export const CodewarsBadge = styled.img`
+padding: 40px 0 20px 20px;
+
+@media screen and (max-width: 1450px) {
+  width: 280px;
+}
+ `;
 
  export const DetailTwo= styled.div`
  display: grid;
  text-align: center;
- align-items: center;
+//  align-items: center;
  font-size: 24px;
  border-top: 6px solid #ca7d7f; //red
  border-radius: 6px;
 //  grid-column: 2;
  padding-right: 20px;
+ padding-top: 40px;
+ padding-left: 20px;
+//  padding-bottom: 40px;
+//  padding: 40px 0 0 40px;
+
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
 
@@ -173,6 +186,6 @@ font-size: 84px;
 color: black;
 display: flex;
 align-self: flex-end;
-padding 0 20px 40px 0;
+padding 20px 0px;
 `;
  export const DetailFive= styled.div``;

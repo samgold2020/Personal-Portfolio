@@ -24,7 +24,9 @@ import {
   // Img,
   ImgContainer,
   LinksContainer,
-  ProjectLink,
+  ProjectLinkOne,
+  ProjectLinkTwo,
+  slide,
 } from './projects-style';
 
 const Projects = ({ slides }) => {
@@ -48,30 +50,57 @@ const Projects = ({ slides }) => {
    return null;
  }
 
+ console.log(ProjectData.id)
  
-  return (
-    <ComponentWrapper>
-      <ProjectsTitle 
-      className="projects"
-      > My Work</ProjectsTitle>
+ return (
+   <ComponentWrapper>
+      <ProjectsTitle className="projects"> My Work</ProjectsTitle>
       <Slider>
         <ArrowLeft onClick={prevSlide}> <FaArrowAltCircleLeft /> </ArrowLeft>
         <ArrowRight onClick={nextSlide}> <FaArrowAltCircleRight /> </ArrowRight>
+        </Slider>
         {ProjectData.map((slide, index) => {
           return(
+            <ProjectsContainer
+           >
+              <ProjectsContent>
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
               {index === current && (
-              // <Img src={slide.image} alt="project images" />
-                slide.title, slide.description
+                <ProjectName>{slide.title}</ProjectName>
               )}
-              <div>
-              {/* {index === current && (
-              )} */}
-              </div>
+              {index === current && (
+              <Img src={slide.image} alt="project images" />
+              )}
+              {/* <div> */}
+              {index === current && (
+                <ProjectDescription>{slide.description}</ProjectDescription>
+              )}
+              {/* </div> */}
+              {/* <div>
+                {slide.id === "sam" (
+                  console.log("ONE")
+                )}
+              </div> */}
+            <LinksContainer>
+            {index === current && (
+                <ProjectLinkOne href={slide.url} target='_blank'>Visit Site</ProjectLinkOne>
+                
+              )}
+
+            {index === current && (
+                <ProjectLinkTwo href={slide.repo} target='_blank'>Github Repo</ProjectLinkTwo>
+                )}
+            </LinksContainer>
             </div>
+            </ProjectsContent>
+            </ProjectsContainer>
             )
           })}
-      </Slider>
+          {/* <div>
+         { slides.id === 1 ? (
+              <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
+          )}
+          </div> */}
 
 
 

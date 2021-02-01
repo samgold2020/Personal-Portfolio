@@ -14,6 +14,7 @@ import {
   DetailsContainer,
   DetailOne,
   DetailTwo,
+  CodewarsBadge,
   DetailThree,
   Button,
   DetailFour,
@@ -25,7 +26,7 @@ const data = {
   title: "Hi, I'm Sam",
   description: "I am a fullstack web developer based in Chicago, Il. I have a passion for building software that aims to improve the lives of others.",
   detailOne: "When I'm not at work I can be found reading, riding my biking around Chicago, or spending time with my cat, Toby Keith.",
-  detailTwo: "I enjoy cracking the code on CodeWars:",
+  detailTwo: "I'm always trying to up my game on Codewars:",
   detailThree:"Contact Me",
   detailFour: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!"
 }
@@ -53,11 +54,12 @@ const About = () => {
           </DetailOne>
 
         <DetailTwo>{data.detailTwo}
+        <CodewarsBadge src='https://www.codewars.com/users/SamGold2020/badges/large'/>
           
         </DetailTwo>
-        <DetailThree>
+        {/* <DetailThree>
           <Button>{data.detailThree}</Button>
-          </DetailThree>
+          </DetailThree> */}
         <DetailFour>{data.detailFour}
         <SocialLinks
           href='https://codepen.io/sjgold'

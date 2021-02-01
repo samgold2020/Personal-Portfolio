@@ -5,11 +5,27 @@ export const ComponentWrapper = styled.div`
 min-height: 100vh;
 background-color: #1E272E; //dark blue
 padding-top: 5px;
-padding-bottom: 5vh;
-
+// padding-bottom: 5vh;
 `;
+
+export const ProjectsContainer = styled.div`
+display: flex;
+justify-content: center;
+text-align: center;
+// height: 50vh;
+// background-color: green;
+`;
+
+
+export const ProjectsContent = styled.div`
+background-color: white;
+border-radius: 15px;
+width: 900px;
+`;
+
 // Component title
 export const ProjectsTitle = styled.p`
+padding-bottom: 50px;
 font-size: 56px;
 display: flex;
 justify-content: center;
@@ -18,17 +34,18 @@ color: white;
 
 export const Slider = styled.div`
 position: relative;
-height: 90vh;
+// height: 40vh;
 display: flex;
 justify-content: center;
-align-items: center;
+// text-align: center;
+width: 100vw;
 `;
 
 export const ArrowLeft = styled.div`
 position: absolute;
-top: 50%;
-left: 32px;
-font-size: 3rem;
+padding-top: 200px;
+left: 150px;
+font-size: 4rem;
 color: white;
 z-index: 10;
 cursor: pointer;
@@ -39,19 +56,19 @@ user-select: none;
 
 export const ArrowRight = styled.div`
 position: absolute;
-top: 50%;
-right: 32px;
-font-size: 3rem;
+padding-top: 200px;
+right: 150px;
+font-size: 4rem;
 color: white;
 z-index: 10;
 cursor: pointer;
 `;
 
-export const Img = styled.img`
-width: 1000px;
-height: 600px;
-border-radius: 10px;
-`;
+// export const Img = styled.img`
+// width: 1000px;
+// height: 600px;
+// border-radius: 10px;
+// `;
 
 export const slide = styled.div`
 opacity: 0;
@@ -63,44 +80,85 @@ transition-duration: 1s ease;
   transform: scale(1.08)
 }
 `;
-//////////////////////////////////////////////
 
-
-export const ProjectsContainer = styled.div`
-display: flex;
+export const LinksContainer = styled.div`
+display: grid;
+grid-template-columns: repeat (2, 1fr);
 justify-content: center;
+text-align: center;
+grid-gap: 20px;
 
 `;
+export const ProjectLinkOne = styled.a`
+grid-column: 1;
+color: black;
+font-size: 28px;
+text-decoration: none;
+cursor: pointer;
+background-color: grey;
+border-radius: 15px;
+// background-color: white;
+padding: 20px;
+transition: all 0.4s ease-out;
+border: 8px solid white;
 
 
-export const ProjectsContent = styled.div`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-row-gap: 40px;
-
-
-@media screen and (max-width: 1900px) {
-  grid-template-columns: repeat(2, 600px);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-@media screen and (max-width: 1000px) {
-  //hide sills and links?
-  grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(2, 1fr);
-}
-@media screen and (max-width: 1100px) {
-    
-
-}
-
-//  @media screen and (max-width: 768px) {
-  //   grid-template-columns: repeat(2, 1fr);
-  //   grid-template-rows: repeat(2, 1fr);
-  //   column-gap: 20px;
-  //  }
+&:hover {
+  transition: all 0.6s ease-in;
+  
+  background: #1E272E; // black coral 
+  color: white;
+  font-size: 32;
+  border: 8px solid white;
+  // color: #e1e2e2; // platinum 
+  // outline: 5px solid #e1e2e2; // platinum 
+  
   `;
+  export const ProjectLinkTwo = styled.a`
+  grid-column: 2;
+  color: black;
+  font-size: 28px;
+  text-decoration: none;
+  background-color: grey;
+  border-radius: 15px;
+  // background-color: white;
+  padding: 20px;
+  transition: all 0.4s ease-out;
+  border: 8px solid white;
+
+  
+  
+  &:hover {
+    transition: all 0.6s ease-in;
+    
+    background: #1E272E; // black coral 
+    color: white;
+    font-size: 32;
+    border: 8px solid white;
+    `;
+
+export const ProjectName = styled.h2`
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    color: black;
+    // background-color: black;
+    // padding: 10px 0px;
+    `;
+    
+export const ProjectDescription = styled.p`
+    font-size: 24px;
+    padding: 10px 30px;
+    // grid-row: 5;
+    // grid-column: 1/3;
+    `;
+
+export const Img = styled.img`
+width:420px;
+border-radius: 15px;
+`;
+//////////////////////////////////////////////
+
 
  
   
@@ -135,65 +193,48 @@ grid-row-gap: 40px;
 // grid-column: 1/3;
 // `;
   
-// export const Img = styled.img`
-// width:120px;
-// `;
 
-export const ProjectName = styled.h2`
-grid-column: 1/3;
-font-size: 36px;
-color: white;
-background-color: black;
-padding: 10px 0px;
-`;
-
-export const ProjectDescription = styled.p`
-font-size: 24px;
-padding: 10px 30px;
-grid-row: 5;
-grid-column: 1/3;
-`;
 
 export const SkillsContainer = styled.div`
-grid-column: 1/3;
-grid-row: 4;
-align-self: center;
-border: 1px solid black;
+// grid-column: 1/3;
+// grid-row: 4;
+// align-self: center;
+// border: 1px solid black;
 `;
 export const Skills = styled.div`
 font-size: 35px;
-display: flex;
-justify-content: space-around;
-padding: 20px 0;
+// display: flex;
+// justify-content: space-around;
+// padding: 20px 0;
 `;
 
-export const LinksContainer = styled.div`
-grid-row: 6;
-align-self: center;
-`;
+// export const LinksContainer = styled.div`
+// grid-row: 6;
+// align-self: center;
+// `;
 
-export const ProjectLink = styled.a`
-border-radius: 10px;
-padding: 10px 20px;
-font-size: 24px;
-cursor: pointer;
-border: 1px solid black;
-text-decoration: none;
-color: black;
-transition: all 0.4s ease-out;
+// export const ProjectLink = styled.a`
+// border-radius: 10px;
+// padding: 10px 20px;
+// font-size: 24px;
+// cursor: pointer;
+// border: 1px solid black;
+// text-decoration: none;
+// color: black;
+// transition: all 0.4s ease-out;
 
 
-&:hover {
-  transition: all 0.6s ease-in;
+// &:hover {
+//   transition: all 0.6s ease-in;
 
-  background: #1E272E; // black coral 
-  color: white;
-  font-size: 28;
-  border: none;
-  // color: #e1e2e2; // platinum 
-  // outline: 5px solid #e1e2e2; // platinum 
-}
-`;
+//   background: #1E272E; // black coral 
+//   color: white;
+//   font-size: 28;
+//   border: none;
+//   // color: #e1e2e2; // platinum 
+//   // outline: 5px solid #e1e2e2; // platinum 
+// }
+// `;
 
 
 

@@ -33,7 +33,10 @@ const footer = ({ onHover, hover }) => {
           </Link> </FooterLinks>
 
         <FooterLinks> <FooterTitle>{data.footerTitle}</FooterTitle></FooterLinks>
-        <FooterLinks>  <FaCodepen />  </FooterLinks>
+        <FooterLinks
+        href='https://codepen.io/sjgold'
+        target='_blank'
+        aria-label='Github'>  <FaCodepen />  </FooterLinks>
         <FooterLinks
         href='https://www.linkedin.com/in/sgoldstein312/'
         target='_blank'

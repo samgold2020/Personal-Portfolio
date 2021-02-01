@@ -47,7 +47,7 @@ export const SkillsLogo = styled.div`
 display: grid;
 justify-content: center;
 align-items: center;
-font-size: 58px;
+font-size: 72px;
 padding: 60px 60px;
 background: grey;
 border-radius: 15px;
