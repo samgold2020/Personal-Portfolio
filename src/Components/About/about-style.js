@@ -18,7 +18,15 @@ position: relative;
 
 &:hover {
   transform: scale(1.1);
+}
 
+@media screen and (max-width: 1650px) {
+  grid-template-columns: 320px auto;
+}
+
+@media screen and (max-width: 1150px) {
+  grid-template-columns: 220px auto;
+}
 `;
 
 export const AboutTitle = styled.p`
@@ -40,6 +48,9 @@ padding: 80px;
 position: absolute;
 top: 0;
 
+@media screen and (max-width: 1150px) {
+  left: 0;
+}
 `;
 
 
@@ -53,14 +64,22 @@ font-size: 36px;
  justify-content: center;
  padding-top: 60px;
  padding-bottom: 90px;
+
  `;
 
  export const DetailsContainer = styled.div`
  display: grid;
-//  grid-template-rows: repeat(4, 150px);
- grid-template-columns: repeat(4, 425px);
+ grid-template-columns: repeat(4, 385px);
  grid-column-gap: 80px;
- grid-row-gap: 40px;
+ grid-gap: 40px;
+
+ @media screen and (max-width: 1650px) {
+  grid-template-columns: repeat(2, 385px);
+}
+
+@media screen and (max-width: 1250px) {
+  grid-template-columns: repeat(2, 285px);
+}
  `;
 
 export const DetailOne= styled.div`
@@ -71,7 +90,7 @@ display: grid;
  font-size: 24px;
  border-top: 6px solid #64cdcf; //teal
  border-radius: 6px;
- grid-column: 1;
+//  grid-column: 1;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -93,7 +112,7 @@ display: grid;
  font-size: 24px;
  border-top: 6px solid #ca7d7f; //red
  border-radius: 6px;
- grid-column: 2;
+//  grid-column: 2;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -113,7 +132,7 @@ display: grid;
  font-size: 24px;
  border-top: 6px solid #edad48; //orange
  border-radius: 6px;
- grid-column: 3;
+//  grid-column: 3;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -137,7 +156,7 @@ display: grid;
  font-size: 24px;
  border-top: 6px solid #60a4da; //blue
  border-radius: 6px;
- grid-column: 4;
+//  grid-column: 4;
  padding-right: 20px;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
  transition: all 0.9s ease-in-out;
@@ -157,4 +176,3 @@ align-self: flex-end;
 padding 0 20px 40px 0;
 `;
  export const DetailFive= styled.div``;
- export const DetailSix= styled.div``;

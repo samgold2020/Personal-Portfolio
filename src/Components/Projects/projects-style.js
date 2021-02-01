@@ -16,6 +16,56 @@ justify-content: center;
 color: white;
 `;
 
+export const Slider = styled.div`
+position: relative;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+export const ArrowLeft = styled.div`
+position: absolute;
+top: 50%;
+left: 32px;
+font-size: 3rem;
+color: white;
+z-index: 10;
+cursor: pointer;
+//User-select here prevents highlighting on double-click
+user-select: none;
+
+`;
+
+export const ArrowRight = styled.div`
+position: absolute;
+top: 50%;
+right: 32px;
+font-size: 3rem;
+color: white;
+z-index: 10;
+cursor: pointer;
+`;
+
+export const Img = styled.img`
+width: 1000px;
+height: 600px;
+border-radius: 10px;
+`;
+
+export const slide = styled.div`
+opacity: 0;
+transition-duration: 1s ease;
+
+&:active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08)
+}
+`;
+//////////////////////////////////////////////
+
+
 export const ProjectsContainer = styled.div`
 display: flex;
 justify-content: center;
@@ -81,13 +131,13 @@ grid-row-gap: 40px;
   
   `;
 
-export const ImgContainer = styled.div`
-grid-column: 1/3;
-`;
+// export const ImgContainer = styled.div`
+// grid-column: 1/3;
+// `;
   
-export const Img = styled.img`
-width:120px;
-`;
+// export const Img = styled.img`
+// width:120px;
+// `;
 
 export const ProjectName = styled.h2`
 grid-column: 1/3;

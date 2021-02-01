@@ -9,6 +9,10 @@ import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import Skills from '../Components/Skills/Skills';
 
+//Data
+import { ProjectData } from '../Components/Projects/ProjectData';
+
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -32,7 +36,7 @@ const Home = () => {
       <Navbar toggle={toggle}/>
       <Hero />
       <About />
-      <Projects />
+      <Projects slides={ProjectData}/>
       <Skills />
       <Contact />
       <Footer />

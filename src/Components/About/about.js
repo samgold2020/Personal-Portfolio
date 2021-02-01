@@ -17,8 +17,7 @@ import {
   DetailThree,
   Button,
   DetailFour,
-  // DetailFive,
-  // DetailSix,
+
 
 } from './about-style';
 
@@ -68,8 +67,6 @@ const About = () => {
           </SocialLinks> 
         </DetailFour>
 
-        {/* <DetailFive>Test</DetailFive>
-        <DetailSix>Test</DetailSix> */}
       </DetailsContainer>
      </DetailsWrapper>
     </AboutWrapper>

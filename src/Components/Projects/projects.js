@@ -1,5 +1,7 @@
-import React from 'react';
-import { SiJavascript, SiReact,  SiDjango, SiPython, SiHtml5, SiCss3} from 'react-icons/si';
+import React, { useState } from 'react';
+import {ProjectData} from './ProjectData';
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
+import { SiJavascript, SiReact,  SiDjango, SiPython, SiHtml5, SiCss3, SiSlides} from 'react-icons/si';
 import Restaurant from '../../images/restaurant.png';
 import CardFront from '../../images/red_card_front.svg';
 import CardBack from '../../images/2_diamonds.svg';
@@ -8,6 +10,10 @@ import CardBack from '../../images/2_diamonds.svg';
 import {
   ComponentWrapper,
   ProjectsTitle,
+  Slider,
+  ArrowRight,
+  ArrowLeft,
+  Img,
   ProjectsContainer,
   ProjectsContent,
   ProjectCard,
@@ -15,20 +21,63 @@ import {
   SkillsContainer,
   Skills,
   ProjectDescription,
-  Img,
+  // Img,
   ImgContainer,
   LinksContainer,
   ProjectLink,
 } from './projects-style';
 
-const Projects = ( ) => {
+const Projects = ({ slides }) => {
+ const [current, setCurrent] = useState(0);
+ const length = slides.length
+
+ //create a function for nextSlide onClick
+ const nextSlide = () => {
+   //Ternary for setting state, if it reaches the end set it back to zero, else i++
+   setCurrent(current === length - 1 ? 0 : current + 1);
+ };
+
+ const prevSlide = () => {
+   setCurrent(current === 0 ? length - 1 : current - 1);
+ };
+
+
+
+ //If there is no data or the data is not an array, return null
+ if(!Array.isArray(slides) || slides.length <= 0){
+   return null;
+ }
+
  
   return (
     <ComponentWrapper>
       <ProjectsTitle 
       className="projects"
       > My Work</ProjectsTitle>
-    <ProjectsContainer
+      <Slider>
+        <ArrowLeft onClick={prevSlide}> <FaArrowAltCircleLeft /> </ArrowLeft>
+        <ArrowRight onClick={nextSlide}> <FaArrowAltCircleRight /> </ArrowRight>
+        {ProjectData.map((slide, index) => {
+          return(
+            <div className={index === current ? 'slide-active' : 'slide'} key={index}>
+              {index === current && (
+              // <Img src={slide.image} alt="project images" />
+                slide.title, slide.description
+              )}
+              <div>
+              {/* {index === current && (
+              )} */}
+              </div>
+            </div>
+            )
+          })}
+      </Slider>
+
+
+
+
+
+    {/* <ProjectsContainer
     data-aos='fade-right'
     data-aos-delay='300'
     >
@@ -123,7 +172,7 @@ const Projects = ( ) => {
       <ProjectCard>
       <ProjectName>Meals for Two</ProjectName>
       {/* <Img src={Flipcards}/> */}
-      <SkillsContainer>
+      {/* <SkillsContainer>
         <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
       </SkillsContainer>
         <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
@@ -141,10 +190,10 @@ const Projects = ( ) => {
                 area-label="921Steak">View the Github Repo
         </ProjectLink>
         </LinksContainer>
-      </ProjectCard>
+      </ProjectCard> */}
       
-      </ProjectsContent>
-    </ProjectsContainer>
+      {/* </ProjectsContent>
+    </ProjectsContainer> */} 
     </ComponentWrapper>
   )
 }
