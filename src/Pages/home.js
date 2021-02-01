@@ -8,6 +8,7 @@ import About from '../Components/About/About';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import Skills from '../Components/Skills/Skills';
+import '../App.css';
 
 //Data
 import { ProjectData } from '../Components/Projects/ProjectData';

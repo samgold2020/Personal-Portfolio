@@ -31,11 +31,12 @@ font-size: 48px;
 
 export const Form = styled.form`
 	background: black;
-	border-radius: 12px;
+	border-radius: 15px;
 	grid-column: 2;
 	max-width: 800px;
 	padding: 50px 50px;
 	width: 100%;
+
 
 	@media screen and (max-width: 400px) {
 		padding: 32px 32px;
@@ -50,10 +51,10 @@ export const Label = styled.label`
 `;
 
 export const InputSelect = styled.select`
-	border-radius: 4px;
-	border: none;
-	margin-bottom: 32px;
-	padding: 16px 16px;
+	// border: none;
+	// margin-bottom: 32px;
+	// padding: 16px 16px;
+	// border-radius: 15px;
 `;
 
 export const FormButton = styled.button`
@@ -78,4 +79,5 @@ export const InputTextArea = styled.textarea`
 	width: 100%;
 	resize: none;
 	font-size: 24px;
+	border-radius: 8px;
 `;

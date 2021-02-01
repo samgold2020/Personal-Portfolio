@@ -19,8 +19,10 @@ const Sidebar = ({ isOpen, toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
+          <SidebarLink to='home'>Home</SidebarLink>
           <SidebarLink to='about'>About</SidebarLink>
           <SidebarLink to='projects'>Projects</SidebarLink>
+          <SidebarLink to='skills'>Skills</SidebarLink>
           <SidebarLink to='contact'>Contact</SidebarLink>
           <SidebarIcons>
             <FaGithubSquare size='50px' />

@@ -10,13 +10,12 @@ z-index: 10;
 
 export const NavContainer = styled.div`
 display: flex;
-justify-content: center;
 position: absolute;
-left: 0px;
 top: 10px;
 background-color: rgb(0,0,0,0.3);
+border-radius: 15px;
 width: 650px;
-z-index: 1;
+z-index: 10;
 cursor: pointer;
 color: white;
 animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -37,10 +36,10 @@ display: none;
 
 @media screen and (max-width: 768px) {
   display: block;
-  // position: absolute;
+  position: absolute;
   top: 0;
   transform: translate(-100%, 60%);
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   cursor: pointer;
   color: #fff;
 }
@@ -52,7 +51,7 @@ list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-width: 550px;
+width: 600px;
 color: white;
 font-size: 28px;
 

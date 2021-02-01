@@ -42,11 +42,12 @@ height: 300px;
 
 export const Img = styled.img`
 border-radius: 55%;
-width3 400px;
-height: 300px;
-padding: 80px;
+width: 340px;
+height: 400px;
+padding: 30px;
 position: absolute;
 top: 0;
+left: 0;
 
 @media screen and (max-width: 1150px) {
   left: 0;
@@ -56,6 +57,8 @@ top: 0;
 
 export const Description = styled.p`
 font-size: 36px;
+grid-row: 2;
+grid-column: 2;
 `;
 
 

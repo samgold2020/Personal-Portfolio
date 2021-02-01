@@ -6,8 +6,8 @@ export const SidebarContainer = styled.aside`
  display: grid;
  align-items: center;
  position: fixed;
- z-index: 8;
- width: 50%;
+ z-index: 20;
+ width: 100%;
  height: 100%;
  background-color: rgb(0,0,0);
  top: 0;
@@ -28,7 +28,7 @@ export const Icon = styled.div`
  position: absolute;
  top: 1.2rem;
  right: 1.5rem;
- background: transparent;
+//  background: transparent;
  font-size: 2rem;
  cursor: pointer;
  outline: none;

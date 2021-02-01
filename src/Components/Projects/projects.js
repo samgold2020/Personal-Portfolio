@@ -62,7 +62,8 @@ const Projects = ({ slides }) => {
         {ProjectData.map((slide, index) => {
           return(
             <ProjectsContainer
-           >
+            data-aos='fade-right'
+            data-aos-delay='300'>
               <ProjectsContent>
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
               {index === current && (

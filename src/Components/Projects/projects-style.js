@@ -21,6 +21,15 @@ export const ProjectsContent = styled.div`
 background-color: white;
 border-radius: 15px;
 width: 900px;
+
+@media screen and (max-width: 1400px) {
+  width: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+  width: 450px;
+}
+
 `;
 
 // Component title
@@ -44,24 +53,32 @@ width: 100vw;
 export const ArrowLeft = styled.div`
 position: absolute;
 padding-top: 200px;
-left: 150px;
+left: 120px;
 font-size: 4rem;
 color: white;
-z-index: 10;
+z-index: 3;
 cursor: pointer;
 //User-select here prevents highlighting on double-click
 user-select: none;
 
+
+@media screen and (max-width: 800px) {
+  left: 20px;
+}
 `;
 
 export const ArrowRight = styled.div`
 position: absolute;
 padding-top: 200px;
-right: 150px;
+right: 120px;
 font-size: 4rem;
 color: white;
-z-index: 10;
+z-index: 3;
 cursor: pointer;
+
+@media screen and (max-width: 800px) {
+  right: 30px;
+}
 `;
 
 // export const Img = styled.img`
@@ -156,6 +173,10 @@ export const ProjectDescription = styled.p`
 export const Img = styled.img`
 width:420px;
 border-radius: 15px;
+
+@media screen and (max-width: 1000px) {
+  width: 200px;
+}
 `;
 //////////////////////////////////////////////
 

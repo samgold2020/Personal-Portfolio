@@ -4,7 +4,6 @@ export const HeroWrapper = styled.div`
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
 `;
 
 
@@ -32,16 +31,15 @@ position: absolute;
 display: flex;
 flex-direction: column;
 align-items: center;
-
 `;
 
 export const HeroH1 = styled.h1`
 color: white;
 z-index: 2;
 font-size: 72px;
-background: rgba(0,0,0,0.8);
-padding-right: 20px;
-padding-left: 20px;
+background: rgba(0,0,0,0.6);
+border-radius: 15px;
+padding: 10px 20px;
 
 @media screen and (max-width: 1024px) {
   display: flex;
@@ -60,9 +58,9 @@ export const HeroP = styled.p`
 color: white;
 z-index: 3;
 font-size: 36px;
-background: rgba(0,0,0,0.8);
-padding-right: 20px;
-padding-left: 20px;
+background: rgba(0,0,0,0.6);
+border-radius: 15px;
+padding: 10px 20px;
 
 @media screen and (max-width: 1024px) {
   display: flex;
