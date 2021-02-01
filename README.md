@@ -5,17 +5,17 @@
 Information about the application.
 
 Main purpose:
-* Purpose 1
-* Purpose 2
-* Purpose 3
+* Personal Portfolio 
 
-Summary
+Summary: 
+
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [React](https://reactjs.org/)
 * [Styled Components](https://styled-components.com/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)
 
 
 <!-- GETTING STARTED -->
@@ -75,6 +75,7 @@ Explanation of about how to contribute and appreciations for future contribution
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+6. npm - i https://michalsnik.github.io/aos/
 
 
 
@@ -88,7 +89,7 @@ Any licenses will go here. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter](https://twitter.com/your_username) - email@example.com
+Sam Goldstein - [@twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -96,11 +97,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Othneil Drew](https://github.com/othneildrew/)
+* [Icon Finder](https://www.iconfinder.com/)
 
 
-
+# Image Download: 
+https://www.motionplaces.com/chicago-dusk-timelapse-free-stock-footage/
