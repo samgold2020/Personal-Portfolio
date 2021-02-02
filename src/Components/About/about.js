@@ -18,10 +18,10 @@ import {
 } from './about-style';
 
 const data = {
-  title: "Hi, I'm Sam",
+  title: "👋 Nice to meet you!",
   description: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
-  detailOne: "When I'm not at work I can be found reading, riding my biking around Chicago, or spending time with my cat, Toby Keith.",
-  detailTwo: "I'm always trying to up my game on Codewars:",
+  detailOne: "In my spare time I can be found reading, riding my biking around Chicago, playing piano, or hanging out with my cat, Toby Keith (pictured above).",
+  detailTwo: "I also enjoy working to up my game on Codewars:",
   detailThree: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!"
 }
 
@@ -30,15 +30,18 @@ const About = () => {
     <AboutWrapper>
       
         <DescriptionContainer>
-          <Img src={Toby}/>
-            <AboutTitle className="about">{data.title}</AboutTitle>
+          <Img className="about" src={Toby}/>
+            {/* <AboutTitle className="about">{data.title}</AboutTitle> */}
           <Description> {data.description}</Description>
         </DescriptionContainer>
           
       <DetailsWrapper>
-      <DetailsContainer >
+      <DetailsContainer
+      data-aos="fade-down">
         <DetailOne>{data.detailOne}
          <SocialLinks
+         data-aos="fade-down"
+         data-aos-duration="1500"
           href='https://www.linkedin.com/in/sgoldstein312/'
           target='_blank'
           aria-label='LinkedIn'>
@@ -47,11 +50,16 @@ const About = () => {
           </DetailOne>
 
         <DetailTwo>{data.detailTwo}
-        <CodewarsBadge src='https://www.codewars.com/users/SamGold2020/badges/large'/>
+        <CodewarsBadge 
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        src='https://www.codewars.com/users/SamGold2020/badges/large'/>
         </DetailTwo>
 
         <DetailThree>{data.detailThree}
         <SocialLinks
+        data-aos="fade-down"
+        data-aos-duration="1500"
           href='https://codepen.io/sjgold'
           target='_blank'
           aria-label='Codepen'>

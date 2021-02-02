@@ -59,7 +59,10 @@ const Projects = ({ slides }) => {
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
               {index === current ? (
 
-              <ProjectsContent key={index}>
+              <ProjectsContent
+              data-aos="zoom-in"
+              data-aos-duration="1500" 
+              key={index}>
                 <ProjectName key={slide.title}>{slide.title}</ProjectName>
                 <Img key={slide.image} src={slide.image} alt="project images" />
                 <ProjectDescription key={slide.description}>{slide.description}</ProjectDescription>

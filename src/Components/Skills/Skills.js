@@ -16,7 +16,9 @@ const Skills = () => {
   return (
     <SkillsWrapper>
       <SkillsTitle className="skills">Skills</SkillsTitle>
-      <SkillsContainer>
+      <SkillsContainer 
+      data-aos="zoom-in"
+      >
 
       <SkillsList>
         <SkillsLogo> <SiJavascript/> </SkillsLogo>

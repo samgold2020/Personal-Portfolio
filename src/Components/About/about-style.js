@@ -15,8 +15,9 @@ color: #1E272E; //dark blue
 export const DescriptionContainer = styled.div`
 display: grid;
 grid-template-columns: 140px auto;
-grid-template-rows: 130px auto;
+// grid-template-rows: 130px auto;
 box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
 
 `;
 
@@ -25,7 +26,7 @@ export const Img = styled.img`
 width: 210px;
 height: 270px;
 position: relative;
-padding-top: 40px;
+padding-top: 20px;
 padding-left: 20px;
 z-index: 2;
 
@@ -40,6 +41,7 @@ text-align: center;
 grid-column: 2;
 padding-left: 100px;
 padding-right: 20px;
+padding-top: 40px;
 color: #1E272E; //dark blue
 `;
 
@@ -105,8 +107,8 @@ padding: 60px 20px 0px 5px;
  border-top: 8px solid #FFC477; //red
  border-radius: 6px;
  padding-right: 20px;
+ padding-left: 10px;
  padding-top: 40px;
- padding-left: 20px;
  background-color: white;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
 
