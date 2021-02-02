@@ -15,7 +15,7 @@ import {
 const Skills = () => {
   return (
     <SkillsWrapper>
-      <SkillsTitle className="skills">Skills</SkillsTitle>
+      <SkillsTitle className="skills">Skills </SkillsTitle>
       <SkillsContainer 
       data-aos="zoom-in"
       >
