@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import {ProjectData} from './ProjectData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
-import { SiJavascript, SiReact,  SiDjango, SiPython, SiHtml5, SiCss3, SiSlides} from 'react-icons/si';
-import Restaurant from '../../images/restaurant.png';
-import CardFront from '../../images/red_card_front.svg';
-import CardBack from '../../images/2_diamonds.svg';
-
+import '../../App.css';
+import { SiJavascript, SiReact, SiDjango, SiPython, SiPostman, SiHtml5, SiCss3, SiSlides} from 'react-icons/si';
 
 import {
   ComponentWrapper,
@@ -16,18 +13,22 @@ import {
   Img,
   ProjectsContainer,
   ProjectsContent,
-  ProjectCard,
+  // ProjectCard,
   ProjectName,
   SkillsContainer,
   Skills,
   ProjectDescription,
   // Img,
-  ImgContainer,
+  // ImgContainer,
   LinksContainer,
   ProjectLinkOne,
   ProjectLinkTwo,
-  slide,
+  // Testing,
+  // slide,
 } from './projects-style';
+import { render } from '@testing-library/react';
+
+
 
 const Projects = ({ slides }) => {
  const [current, setCurrent] = useState(0);
@@ -43,187 +44,86 @@ const Projects = ({ slides }) => {
    setCurrent(current === 0 ? length - 1 : current - 1);
  };
 
-
-
  //If there is no data or the data is not an array, return null
  if(!Array.isArray(slides) || slides.length <= 0){
    return null;
  }
 
- console.log(ProjectData.id)
  
  return (
    <ComponentWrapper>
+
       <ProjectsTitle className="projects"> My Work</ProjectsTitle>
+
       <Slider>
         <ArrowLeft onClick={prevSlide}> <FaArrowAltCircleLeft /> </ArrowLeft>
         <ArrowRight onClick={nextSlide}> <FaArrowAltCircleRight /> </ArrowRight>
         </Slider>
+
         {ProjectData.map((slide, index) => {
           return(
-            <ProjectsContainer
-            data-aos='fade-right'
-            data-aos-delay='300'>
-              <ProjectsContent>
+
+            <ProjectsContainer>
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-              {index === current && (
+              {index === current ? (
+
+              <ProjectsContent>
                 <ProjectName>{slide.title}</ProjectName>
-              )}
-              {index === current && (
-              <Img src={slide.image} alt="project images" />
-              )}
-              {/* <div> */}
-              {index === current && (
+                <Img src={slide.image} alt="project images" />
                 <ProjectDescription>{slide.description}</ProjectDescription>
-              )}
-              {/* </div> */}
-              {/* <div>
-                {slide.id === "sam" (
-                  console.log("ONE")
-                )}
-              </div> */}
-            <LinksContainer>
-            {index === current && (
-                <ProjectLinkOne href={slide.url} target='_blank'>Visit Site</ProjectLinkOne>
-                
-              )}
 
-            {index === current && (
-                <ProjectLinkTwo href={slide.repo} target='_blank'>Github Repo</ProjectLinkTwo>
-                )}
-            </LinksContainer>
-            </div>
-            </ProjectsContent>
-            </ProjectsContainer>
-            )
-          })}
-          {/* <div>
-         { slides.id === 1 ? (
-              <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
-          )}
-          </div> */}
+                <div key={index} >
+                {slide.id === 1 ? (
+                 <SkillsContainer>
+                   <Skills> <SiReact /> </Skills>
+                   <Skills> <SiJavascript /> </Skills>
+                   <Skills> <SiHtml5 /> </Skills>
+                   <Skills> <SiCss3 /> </Skills>
+                 </SkillsContainer>
+            
+                  ) : slide.id === 2 ? (
+                  <SkillsContainer>
+                   <Skills> <SiReact /> </Skills>
+                   <Skills> <SiJavascript /> </Skills>
+                   <Skills> <SiDjango /> </Skills>
+                   <Skills> <SiPython  /> </Skills>
+                   <Skills> <SiPostman /> </Skills>
+                 </SkillsContainer>
 
+                  ) :  slide.id === 3 ? (
+                    <SkillsContainer>
+                      <Skills> <SiReact /> </Skills>
+                      <Skills> <SiJavascript /> </Skills>
+                      <Skills> <SiHtml5 /> </Skills>
+                      <Skills> <SiCss3 /> </Skills>
+                    </SkillsContainer>
+                  ) : slide.id === 4 ? (
+                    <SkillsContainer>
+                      <Skills> <SiJavascript /> </Skills>
+                      <Skills> <SiHtml5 /> </Skills>
+                      <Skills> <SiCss3 /> </Skills>
+                    </SkillsContainer>
+                  ) : null } 
+              </div>
 
+                <LinksContainer>
+                <ProjectLinkOne 
+                href={slide.url} 
+                target='_blank'>
+                  Visit Site</ProjectLinkOne>
+                  
+                <ProjectLinkTwo 
+                href={slide.repo} 
+                target='_blank'>
+                  Github Repo</ProjectLinkTwo>
 
-
-
-    {/* <ProjectsContainer
-    data-aos='fade-right'
-    data-aos-delay='300'
-    >
-
-      <ProjectsContent>
-      <ProjectCard>
-      <ProjectName>Portfolio</ProjectName>
-        <ImgContainer>
-      <Img src={Restaurant}/>
-      </ImgContainer>
-      <SkillsContainer>
-        <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
-      </SkillsContainer>
-        <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        <LinksContainer>
-
-        </LinksContainer>
-
-        <LinksContainer>
-        <ProjectLink
-                href='https://github.com/samgold2020/portfolio'
-                target="_blank"
-                area-label="Portfolio">View the Github Repo
-        </ProjectLink>
-        </LinksContainer>      
-        </ProjectCard>
-
-
-
-
-      <ProjectCard>
-        <ProjectName>921Steak</ProjectName>
-        <ImgContainer>
-      <Img src={Restaurant}/>
-      </ImgContainer>
-      <SkillsContainer>
-        <Skills><SiReact/><SiJavascript/><SiDjango/><SiPython/><SiHtml5/><SiCss3/></Skills>
-      </SkillsContainer>
-        <ProjectDescription>A fullstack restaurant website complete with mobile response, admin login and dummy OpenTable reservation widget. </ProjectDescription>
-        <LinksContainer>
-        <ProjectLink 
-        href='https://www.921steak.com/'
-        target="_blank"
-        area-label="921Steak">View the project</ProjectLink>
-        </LinksContainer>
-
-        <LinksContainer>
-        <ProjectLink
-                href='https://github.com/REST-a-site'
-                target="_blank"
-                area-label="921Steak">View the Github Repo
-        </ProjectLink>
-        </LinksContainer>
-
-        
-      </ProjectCard>
-
-      <ProjectCard>
-      <ProjectName>FLIPCARDS</ProjectName>
-      <ImgContainer>
-      <Img 
-      src={CardFront}
-      alt="Card deck back" 
-      data-aos="flip-left"
-      data-aos-delay='350'/>
-      <Img 
-      src={CardBack} 
-      alt="Card deck two of diamonds"
-      data-aos="flip-right"
-      data-aos-delay='450'/>
-      </ImgContainer>
-      <SkillsContainer>
-        <Skills><SiJavascript/><SiHtml5/><SiCss3/></Skills>
-      </SkillsContainer>
-        <ProjectDescription>Test your memory with this Vanilla Javascript game! Flipcards features a dark/light mode toggle, </ProjectDescription>
-        <LinksContainer>
-        <ProjectLink 
-        href='https://samgold2020.github.io/Flipcards/level-one.html'
-        target="_blank"
-        area-label="Flipcards">View the Project</ProjectLink>
-        </LinksContainer>
-
-        <LinksContainer>
-        <ProjectLink
-                href='https://github.com/samgold2020/Flipcards'
-                target="_blank"
-                area-label="921Steak">View the Github Repo
-        </ProjectLink>
-        </LinksContainer>
-      </ProjectCard>
-
-      <ProjectCard>
-      <ProjectName>Meals for Two</ProjectName>
-      {/* <Img src={Flipcards}/> */}
-      {/* <SkillsContainer>
-        <Skills><SiReact/><SiJavascript/><SiHtml5/><SiCss3/></Skills>
-      </SkillsContainer>
-        <ProjectDescription>Test your memory with this fun Vanilla Javascipt game!  Built with CSS Grid and an animation exposing the card information on the back. MORE WORDS. </ProjectDescription>
-        <LinksContainer>
-        <ProjectLink 
-        href='https://github.com/samgold2020/MealsForYou'
-        target="_blank"
-        area-label="Flipcards">View the Project</ProjectLink>
-        </LinksContainer>
-
-        <LinksContainer>
-        <ProjectLink
-                href='https://github.com/samgold2020/MealsForYou'
-                target="_blank"
-                area-label="921Steak">View the Github Repo
-        </ProjectLink>
-        </LinksContainer>
-      </ProjectCard> */}
-      
-      {/* </ProjectsContent>
-    </ProjectsContainer> */} 
+                </LinksContainer>
+                </ProjectsContent>
+                ): null }
+                </div>
+                </ProjectsContainer>
+                )
+              })}
     </ComponentWrapper>
   )
 }

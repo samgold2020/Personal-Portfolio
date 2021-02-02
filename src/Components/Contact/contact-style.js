@@ -58,7 +58,7 @@ export const InputSelect = styled.select`
 `;
 
 export const FormButton = styled.button`
-	color: #1f262e;
+  color: #1E272E; //dark blue
 	border-radius: 6px;
 	border: none;
 	background: #white;

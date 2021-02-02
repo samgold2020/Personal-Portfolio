@@ -27,7 +27,7 @@ border-top: 3px solid black;
 
 export const FooterLinks = styled.a`
 padding-top: 20px;
-color: black;
+color: #1E272E; //dark blue
 
 &:hover {
   transform: scale(1.3);

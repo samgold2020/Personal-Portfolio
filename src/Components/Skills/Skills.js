@@ -10,6 +10,8 @@ import {
   SkillsLogo,
 } from './skills-style'
 
+
+//set icons to key value pairs object and map over /call 
 const Skills = () => {
   return (
     <SkillsWrapper>

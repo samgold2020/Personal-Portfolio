@@ -13,6 +13,7 @@ export const SkillsTitle = styled.p`
 font-size: 56px;
 display: flex;
 justify-content: center;
+color: #1E272E; //dark blue
 `;
 
 export const SkillsContainer = styled.div`
@@ -49,6 +50,7 @@ font-size: 72px;
 padding: 60px 60px;
 background: grey;
 border-radius: 15px;
+color: #1E272E; //dark blue
 
 &:hover {
   transform: scale(1.1);

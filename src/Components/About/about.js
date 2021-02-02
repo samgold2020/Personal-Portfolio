@@ -28,11 +28,11 @@ const data = {
 const About = () => {
   return (
     <AboutWrapper>
-      <AboutTitle className="about">{data.title}</AboutTitle>
       
         <DescriptionContainer>
-        <Img src={Toby}/>
-        <Description> {data.description}</Description>
+          <Img src={Toby}/>
+            <AboutTitle className="about">{data.title}</AboutTitle>
+          <Description> {data.description}</Description>
         </DescriptionContainer>
           
       <DetailsWrapper>
