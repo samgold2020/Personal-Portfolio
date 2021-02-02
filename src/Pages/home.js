@@ -19,14 +19,10 @@ import "aos/dist/aos.css";
 
 
 const Home = () => {
-  const [ hover, setHover ] = useState(false);
   const [ isOpen, setIsOpen ] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  
-
-  const onHover = () => setHover(!hover);
-  
+    
 	useEffect(() => {
 		Aos.init({});
 	}, []);

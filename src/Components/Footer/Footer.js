@@ -19,7 +19,6 @@ const footer = ({ onHover, hover }) => {
   return (
     <FooterWrapper>
         <FooterContent>
-
         <FooterLinks>
         <Link
         activeClass="active"

@@ -48,7 +48,7 @@ const Contact = () => {
 								name='subject'
 								id='subject'
 								form='subjectform'
-								onChange={(event) => setEmail(event.target.value)}
+								onChange={(event) => setSubject(event.target.value)}
 								value={subject}
 							/>
 							<Label htmlFor='message'>Message:</Label>

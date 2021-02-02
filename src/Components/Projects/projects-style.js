@@ -157,29 +157,6 @@ export const Img = styled.img`
   width: 200px;
 }
 `;
-  
-export const ProjectCard = styled.div`
-  text-align: center;
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 20px 20px;
-  width: 90%;
-  height: 620px;
-  border: solid white 3px;
-  border-radius: 10px;
-  justify-self: center;
-  transition: all 0.9s ease-in-out;
-
-&:hover {
-  transform: scale(1.1);
-
-  @media screen and (max-width: 768px) {
-    width: 220px;
-    height: 220px;
-  }
-`;
 
 export const SkillsContainer = styled.div`
 // color: white;
@@ -189,9 +166,6 @@ padding: 10px;
 font-size: 48px;
 display: flex;
 justify-content: space-around;
-
-
-
 `;
 
 export const Skills = styled.div`
@@ -200,34 +174,6 @@ justify-content: space-between;
 text-align: center;
 `;
 
-export const Testing = styled.div``;
-// export const LinksContainer = styled.div`
-// grid-row: 6;
-// align-self: center;
-// `;
-
-// export const ProjectLink = styled.a`
-// border-radius: 10px;
-// padding: 10px 20px;
-// font-size: 24px;
-// cursor: pointer;
-// border: 1px solid black;
-// text-decoration: none;
-// color: black;
-// transition: all 0.4s ease-out;
-
-
-// &:hover {
-//   transition: all 0.6s ease-in;
-
-//   background: #1E272E; // black coral 
-//   color: white;
-//   font-size: 28;
-//   border: none;
-//   // color: #e1e2e2; // platinum 
-//   // outline: 5px solid #e1e2e2; // platinum 
-// }
-// `;
 
 
 

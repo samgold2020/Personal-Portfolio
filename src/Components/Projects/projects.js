@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {ProjectData} from './ProjectData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import '../../App.css';
-import { SiJavascript, SiReact, SiDjango, SiPython, SiPostman, SiHtml5, SiCss3, SiSlides} from 'react-icons/si';
+import { SiJavascript, SiReact, SiDjango, SiPython, SiPostman, SiHtml5, SiCss3} from 'react-icons/si';
 
 import {
   ComponentWrapper,
@@ -13,22 +13,14 @@ import {
   Img,
   ProjectsContainer,
   ProjectsContent,
-  // ProjectCard,
   ProjectName,
   SkillsContainer,
   Skills,
   ProjectDescription,
-  // Img,
-  // ImgContainer,
   LinksContainer,
   ProjectLinkOne,
   ProjectLinkTwo,
-  // Testing,
-  // slide,
 } from './projects-style';
-import { render } from '@testing-library/react';
-
-
 
 const Projects = ({ slides }) => {
  const [current, setCurrent] = useState(0);
@@ -63,14 +55,14 @@ const Projects = ({ slides }) => {
         {ProjectData.map((slide, index) => {
           return(
 
-            <ProjectsContainer>
+            <ProjectsContainer key={index}>
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
               {index === current ? (
 
-              <ProjectsContent>
-                <ProjectName>{slide.title}</ProjectName>
-                <Img src={slide.image} alt="project images" />
-                <ProjectDescription>{slide.description}</ProjectDescription>
+              <ProjectsContent key={index}>
+                <ProjectName key={slide.title}>{slide.title}</ProjectName>
+                <Img key={slide.image} src={slide.image} alt="project images" />
+                <ProjectDescription key={slide.description}>{slide.description}</ProjectDescription>
 
                 <div key={index} >
                 {slide.id === 1 ? (
@@ -108,11 +100,13 @@ const Projects = ({ slides }) => {
 
                 <LinksContainer>
                 <ProjectLinkOne 
+                key={slide.url}
                 href={slide.url} 
                 target='_blank'>
                   Visit Site</ProjectLinkOne>
                   
                 <ProjectLinkTwo 
+                key={slide.repo}
                 href={slide.repo} 
                 target='_blank'>
                   Github Repo</ProjectLinkTwo>

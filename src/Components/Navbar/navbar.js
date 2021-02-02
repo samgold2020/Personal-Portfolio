@@ -1,7 +1,6 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react'
 import { FaBars } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import {
  NavWrapper,
  NavContainer,
@@ -11,25 +10,6 @@ import {
 } from './navbar-style';
 
 const Navbar = ({ toggle }) => {
-  // const [scrolled, setScrolled] = useState(false);
-
-  // const handleScroll = () => {
-  //   const offset = window.scrollY;
-  //   if (offset > 200 ){
-  //     setScrolled(true)
-  //   } else {
-  //     setScrolled(false)
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
-  //   let navbarClasses=['navbar'];
-  // if(scrolled){
-  //   navbarClasses.push('scrolled');
-  // })
-
-
   return (
     <NavWrapper >
       <NavContainer>
