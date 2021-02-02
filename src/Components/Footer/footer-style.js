@@ -25,7 +25,7 @@ border-top: 3px solid black;
 }
 `;
 
-export const FooterLinks = styled.a`
+export const FooterLinks = styled.div`
 padding-top: 20px;
 color: #1E272E; //dark blue
 

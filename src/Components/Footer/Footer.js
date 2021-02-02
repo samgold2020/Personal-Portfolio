@@ -15,7 +15,7 @@ const data = {
 
 }
 
-const footer = ({ onHover, hover }) => {
+const footer = () => {
   return (
     <FooterWrapper>
         <FooterContent>
