@@ -5,10 +5,9 @@ import { FaLinkedin, FaCodepen } from 'react-icons/fa';
 import {
   AboutWrapper,
   AboutTitle,
-  AboutContainer,
   Description,
+  DescriptionContainer,
   SocialLinks,
-  ImgWrapper,
   Img,
   DetailsWrapper,
   DetailsContainer,
@@ -16,38 +15,28 @@ import {
   DetailTwo,
   CodewarsBadge,
   DetailThree,
-  Button,
-  DetailFour,
-
-
 } from './about-style';
 
 const data = {
   title: "Hi, I'm Sam",
-  description: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly. Have a look around!",
+  description: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
   detailOne: "When I'm not at work I can be found reading, riding my biking around Chicago, or spending time with my cat, Toby Keith.",
   detailTwo: "I'm always trying to up my game on Codewars:",
-  detailThree:"Contact Me",
-  detailFour: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!"
+  detailThree: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!"
 }
 
 const About = () => {
   return (
     <AboutWrapper>
-      <AboutContainer
-      data-aos='fade-right'
-      data-aos-delay='250'>
       <AboutTitle className="about">{data.title}</AboutTitle>
-        <ImgWrapper>
+      
+        <DescriptionContainer>
         <Img src={Toby}/>
-        </ImgWrapper>
-        <Description>{data.description}</Description>
+        <Description> {data.description}</Description>
+        </DescriptionContainer>
           
-      </AboutContainer>
       <DetailsWrapper>
-      <DetailsContainer 
-      data-aos='fade-left'
-      data-aos-delay='400'>
+      <DetailsContainer >
         <DetailOne>{data.detailOne}
          <SocialLinks
           href='https://www.linkedin.com/in/sgoldstein312/'
@@ -59,19 +48,16 @@ const About = () => {
 
         <DetailTwo>{data.detailTwo}
         <CodewarsBadge src='https://www.codewars.com/users/SamGold2020/badges/large'/>
-          
         </DetailTwo>
-        {/* <DetailThree>
-          <Button>{data.detailThree}</Button>
-          </DetailThree> */}
-        <DetailFour>{data.detailFour}
+
+        <DetailThree>{data.detailThree}
         <SocialLinks
           href='https://codepen.io/sjgold'
           target='_blank'
           aria-label='Codepen'>
           <FaCodepen/>
           </SocialLinks> 
-        </DetailFour>
+        </DetailThree>
 
       </DetailsContainer>
      </DetailsWrapper>
@@ -81,4 +67,3 @@ const About = () => {
 
 export default About;
 
-//As a lifelong student I am always hard at work gaining new skills and perfecting old ones.

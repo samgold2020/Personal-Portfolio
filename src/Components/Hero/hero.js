@@ -9,6 +9,11 @@ import {
   HeroP,
 } from './hero-style';
 
+const about = {
+  title: 'Samantha Goldstein',
+  subtitle: "Fullstack Softare Engineer",
+}
+
 const Hero = () => {
   return (
     <HeroWrapper>
@@ -17,8 +22,8 @@ const Hero = () => {
         <source src={Video} type='video/mp4'/>
         </VideoContainer>
       <HeroContent>
-        <HeroH1>Samantha Goldstein </HeroH1>
-        <HeroP>Fullstack Software Engineer</HeroP>
+        <HeroH1>{about.title}</HeroH1>
+        <HeroP>{about.subtitle}</HeroP>
       </HeroContent>
     </HeroContainer>
     </HeroWrapper>

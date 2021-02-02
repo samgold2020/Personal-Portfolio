@@ -172,7 +172,7 @@ export const ProjectDescription = styled.p`
 
 export const Img = styled.img`
 width:420px;
-border-radius: 15px;
+border-radius: 100px;
 
 @media screen and (max-width: 1000px) {
   width: 200px;

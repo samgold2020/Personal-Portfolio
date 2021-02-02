@@ -2,9 +2,9 @@
 
 export const ProjectData = [
   { 
-    id: "sam",
+    id: "1",
     title: 'Portfolio',
-    description: 'Featuring smooth scroll and carousel, this front end react portfolio utilizes React Icons and a form hosted on Netifly.',
+    description: 'Built with React styled components, smooth-scroll, and carousel, this front application features a form hosted on Netifly.',
     skills: ["React", "Javascript", "HTML", "CSS"],
     url: 'www.google.com',
     repo: 'https://github.com/samgold2020/portfolio',

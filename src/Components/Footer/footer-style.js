@@ -6,7 +6,6 @@ display: flex;
 justify-content: center;
 `;
 
-
 export const FooterContent = styled.ul`
 text-decoration: none;
 list-style-type: none;
@@ -28,8 +27,12 @@ border-top: 3px solid black;
 
 export const FooterLinks = styled.a`
 padding-top: 20px;
-cursor: pointer;
 color: black;
+
+&:hover {
+  transform: scale(1.3);
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
 `;
 
 export const FooterTitle = styled.p`

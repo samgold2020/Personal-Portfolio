@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import { FaNodeJs, FaGithubSquare } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiHtml5, SiCss3, SiPostman, SiPostgresql, SiPython, SiMongodb, SiAmazonaws} from 'react-icons/si';
 import { DiDjango } from 'react-icons/di';
@@ -10,13 +8,12 @@ import {
   SkillsContainer,
   SkillsList,
   SkillsLogo,
-
 } from './skills-style'
 
 const Skills = () => {
   return (
     <SkillsWrapper>
-      <SkillsTitle className="skills">My Skills</SkillsTitle>
+      <SkillsTitle className="skills">Skills</SkillsTitle>
       <SkillsContainer>
 
       <SkillsList>

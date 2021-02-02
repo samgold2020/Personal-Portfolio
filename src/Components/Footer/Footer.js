@@ -1,5 +1,4 @@
 import React from 'react';
-import { MdArrowUpward } from 'react-icons/md';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FaGithubSquare, FaLinkedin, FaCodepen } from 'react-icons/fa';
 import { ImArrowUp } from 'react-icons/im';

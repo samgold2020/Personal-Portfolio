@@ -39,8 +39,6 @@ export const SkillsList = styled.div`
   grid-template-rows: repeat(4, 1fr);
   justify-content: center;
 }
-
-
 `;
 
 export const SkillsLogo = styled.div`
@@ -56,9 +54,6 @@ border-radius: 15px;
   transform: scale(1.1);
   transition: all 0.6s ease-in-out;
   cursor: pointer;
-
-  
-
 `;
 
 
