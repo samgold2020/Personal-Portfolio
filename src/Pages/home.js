@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
@@ -30,6 +30,7 @@ const Home = () => {
 
   return (
     <>
+
       {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
       <Navbar toggle={toggle}/>
       <Hero />
