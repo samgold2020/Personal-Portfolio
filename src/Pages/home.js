@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from 'react';
 
 import Hero from '../Components/Hero/Hero';
 import Navbar from '../Components/Navbar/Navbar';
-import Sidebar from '../Components/Sidebar/Sidebar';
+// import Sidebar from '../Components/Sidebar/Sidebar';
 import Projects from '../Components/Projects/Projects';
 import About from '../Components/About/About';
 import Contact from '../Components/Contact/Contact';
@@ -20,7 +19,7 @@ import { ProjectData } from '../Components/Projects/ProjectData';
 
 
 const Home = () => {
-  const [ isOpen, setIsOpen ] = useState(false);
+  // const [ isOpen, setIsOpen ] = useState(false);
     
 	// useEffect(() => {
 	// 	Aos.init({});

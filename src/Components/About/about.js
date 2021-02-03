@@ -5,7 +5,7 @@ import PersonalResume from '../../docs/Resume.pdf';
 
 import {
   AboutWrapper,
-  AboutTitle,
+  // AboutTitle,
   Description,
   DescriptionContainer,
   SocialLinks,
@@ -14,9 +14,9 @@ import {
   DetailsContainer,
   DetailOne,
   DetailTwo,
-  CodewarsBadge,
+  // CodewarsBadge,
   DetailThree,
-  ResumeWrapper,
+  // ResumeWrapper,
   Resume,
 } from './about-style';
 
