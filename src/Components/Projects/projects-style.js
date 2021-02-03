@@ -5,6 +5,10 @@ export const ComponentWrapper = styled.div`
   background-color: #1E272E; //dark blue
   padding-top: 5px;
   padding-bottom: 5vh;
+
+  @media screen and (max-width: 580px) {
+    padding-bottom: 1vh;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -27,7 +31,7 @@ export const ProjectsContent = styled.div`
 }
 
 @media screen and (max-width: 580px) {
-  width: 220px;
+  width: 320px;
 }
 `;
 
@@ -45,7 +49,7 @@ export const Slider = styled.div`
   width: 100vw;
 
   @media screen and (max-width: 580px) {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   
 `;
@@ -54,7 +58,7 @@ export const ArrowLeft = styled.div`
   position: absolute;
   padding-top: 200px;
   left: 120px;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   z-index: 3;
   cursor: pointer;
@@ -67,8 +71,8 @@ export const ArrowLeft = styled.div`
 }
 
 @media screen and (max-width: 580px) {
-  padding-top: 3px;
-  font-size: 2rem;
+  padding-top: 1px;
+  font-size: 3rem;
   left: 120px;
 }
 `;
@@ -87,23 +91,23 @@ export const ArrowRight = styled.div`
   }
 
   @media screen and (max-width: 580px) {
-    padding-top: 3px;
-    font-size: 2rem;
+    padding-top: 1px;
+    font-size: 3rem;
     right: 130px;
   }
 `;
 
 
-export const slide = styled.div`
-  opacity: 0;
-  transition-duration: 1s ease;
+// export const slide = styled.div`
+//   opacity: 0;
+//   transition-duration: 1s ease;
 
-&:active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08)
-}
-`;
+// &:active {
+//   opacity: 1;
+//   transition-duration: 1s;
+//   transform: scale(1.08)
+// }
+// `;
 
 export const LinksContainer = styled.div`
   display: grid;
@@ -116,7 +120,6 @@ export const LinksContainer = styled.div`
 
 export const ProjectLinkOne = styled.a`
   grid-column: 1;
-  color: black;
   font-size: 28px;
   color: #1E272E; //dark blue
   text-decoration: none;
@@ -128,7 +131,7 @@ export const ProjectLinkOne = styled.a`
   border: 8px solid white;
 
   @media screen and (max-width: 580px) {
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px;
   }
 
@@ -144,7 +147,6 @@ export const ProjectLinkOne = styled.a`
 export const ProjectLinkTwo = styled.a`
 display: grid;
   grid-column: 2;
-  color: black;
   font-size: 28px;
   color: #1E272E; //dark blue
   text-decoration: none;
@@ -164,7 +166,7 @@ display: grid;
     color: white;
     font-size: 32;
     border: 8px solid white;
-
+  }
  
 `;
 

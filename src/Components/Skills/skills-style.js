@@ -43,8 +43,8 @@ export const SkillsList = styled.div`
 
 @media screen and (max-width: 580px) {
 
-  grid-template-columns: repeat(3, 80px);
-  grid-template-rows: repeat(4, 80px);
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(4, 120px);
   justify-content: center;
   grid-gap: 10px;
 }
@@ -68,6 +68,12 @@ color: #1E272E; //dark blue
   padding-bottom: 1px;
   padding-left: 1px;
   padding-right: 1px;
+}
+
+&:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-position: right;
 }
 `;
 

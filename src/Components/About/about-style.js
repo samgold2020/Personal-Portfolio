@@ -91,24 +91,26 @@ export const DetailOne= styled.div`
   background-position: right;
  `;
 
- export const CodewarsBadge = styled.img`
-padding: 60px 20px 0px 5px;
+//  export const CodewarsBadge = styled.img`
+// padding: 60px 20px 0px 5px;
 
-@media screen and (max-width: 1450px) {
-  width: 280px;
-}
- `;
+// @media screen and (max-width: 1450px) {
+//   width: 280px;
+// }
+//  `;
 
  export const DetailTwo= styled.div`
- display: grid;
- text-align: right;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+//  text-align: right;
  color: #1E272E; //dark blue
- font-size: 24px;
+//  font-size: 24px;
  border-top: 8px solid #FFC477; //red
  border-radius: 6px;
- padding-right: 20px;
- padding-left: 10px;
- padding-top: 40px;
+//  padding-right: 20px;
+//  padding-left: 10px;
+//  padding-top: 40px;
  background-color: white;
  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
 
@@ -154,3 +156,28 @@ align-self: flex-end;
 padding 20px 0px;
 `;
 
+
+// export const ResumeWrapper = styled.div`
+// display: grid:
+// grid-template-columns: repeat(3, 1fr)
+// background-color: green;
+// `;
+export const Resume = styled.a`
+// justify-content: center;
+align-self: center;
+cursor: pointer;
+color: #1E272E; //dark blue
+text-decoration: none;
+background-color: #E1E2E2; //light grey
+padding: 30px;
+font-size: 24px;
+border-radius: 15px;
+
+&:hover {
+  transition: all 0.6s ease-in;
+  background: #1E272E; // black coral 
+  color: white;
+  font-size: 32;
+}
+
+`;

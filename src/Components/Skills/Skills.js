@@ -17,7 +17,7 @@ const Skills = () => {
     <SkillsWrapper>
       <SkillsTitle className="skills">Skills </SkillsTitle>
       <SkillsContainer 
-      // data-aos="zoom-in"
+      data-aos="zoom-in"
       >
 
       <SkillsList>
