@@ -4,6 +4,10 @@ export const HeroWrapper = styled.div`
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
+@media screen and (max-width: 480px) {
+  width: 100vw;
+}
 `;
 
 
@@ -12,7 +16,6 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-// height: 100%;
 min-height: 100vh;
 background-color: green;
 `;

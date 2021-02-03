@@ -1,6 +1,5 @@
 import React from 'react';
-import { MdArrowUpward } from 'react-icons/md';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { FaGithubSquare, FaLinkedin, FaCodepen } from 'react-icons/fa';
 import { ImArrowUp } from 'react-icons/im';
 
@@ -16,11 +15,10 @@ const data = {
 
 }
 
-const footer = ({ onHover, hover }) => {
+const footer = () => {
   return (
     <FooterWrapper>
         <FooterContent>
-
         <FooterLinks>
         <Link
         activeClass="active"

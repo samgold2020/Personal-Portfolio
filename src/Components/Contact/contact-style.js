@@ -7,6 +7,14 @@ padding-top: 1vh;
 padding-bottom: 1vh;
 padding-right: 10vh;
 padding-left: 10vh;
+
+@media screen and (max-width: 580px) {
+	padding-top: 5vh;
+padding-bottom: 5vh;
+padding-right: 2vh;
+padding-left: 2vh;
+
+}
 `;
 
 export const ContactContainer = styled.div`
@@ -19,6 +27,13 @@ padding: 10vh 0;
 	grid-column: 1;
 	justify-content: center;
 	align-self: center;
+}
+
+@media screen and (max-width: 580px) {
+	display: flex;
+text-align: center;
+	width: 300px;
+	padding: 0vh;
 }
 `;
 
@@ -58,7 +73,7 @@ export const InputSelect = styled.select`
 `;
 
 export const FormButton = styled.button`
-	color: #1f262e;
+  color: #1E272E; //dark blue
 	border-radius: 6px;
 	border: none;
 	background: #white;

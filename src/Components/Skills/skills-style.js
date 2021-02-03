@@ -3,21 +3,22 @@ import styled from 'styled-components';
 export const SkillsWrapper = styled.div`
 min-height: 50vh;
 padding-bottom: 10vh;
-
-@media screen and (max-width: 780px) {
-  padding: 10vh;
-}
 `;
 
 export const SkillsTitle = styled.p`
 font-size: 56px;
 display: flex;
 justify-content: center;
+color: #1E272E; //dark blue
 `;
 
 export const SkillsContainer = styled.div`
 display: flex;
 justify-content: center;
+
+@media screen and (max-width: 780px) {
+min-height: 50vh;
+}
 `;
 
 export const SkillsList = styled.div`
@@ -40,6 +41,13 @@ export const SkillsList = styled.div`
   justify-content: center;
 }
 
+@media screen and (max-width: 580px) {
+
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(4, 120px);
+  justify-content: center;
+  grid-gap: 10px;
+}
 
 `;
 
@@ -51,14 +59,22 @@ font-size: 72px;
 padding: 60px 60px;
 background: grey;
 border-radius: 15px;
+color: #1E272E; //dark blue
+
+@media screen and (max-width: 580px) {
+
+  font-size: 42px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
 
 &:hover {
   transform: scale(1.1);
-  transition: all 0.6s ease-in-out;
   cursor: pointer;
-
-  
-
+  background-position: right;
+}
 `;
 
 

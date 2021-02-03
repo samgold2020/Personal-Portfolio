@@ -11,9 +11,10 @@ import {
 } from './contact-style';
 
 const Contact = () => {
-	const [contact, setContact] = useState();
 	const [name, setName] = useState();
 	const [email, setEmail] = useState();
+	const [subject, setSubject] = useState();
+	const [message, setMessage] = useState();
 
 	return (
 		<ContactWrapper>
@@ -40,15 +41,25 @@ const Contact = () => {
 								onChange={(event) => setEmail(event.target.value)}
 								value={email}
 							/>
-							<Label htmlFor='additionalDetails'>Inquiry:</Label>
+							<Label htmlFor='subject'>Subject:</Label>
 							<InputTextArea
 								type='text'
-								rows='8'
-								name='details'
-								id='details'
-								form='detailsform'
-								onChange={(event) => setContact(event.target.value)}
-								value={contact}
+								rows='2'
+								name='subject'
+								id='subject'
+								form='subjectform'
+								onChange={(event) => setSubject(event.target.value)}
+								value={subject}
+							/>
+							<Label htmlFor='message'>Message:</Label>
+							<InputTextArea
+								type='text'
+								rows='5'
+								name='message'
+								id='message'
+								form='messageform'
+								onChange={(event) => setMessage(event.target.value)}
+								value={message}
 							/>
 							<FormButton>Submit</FormButton>
 						</Form>
