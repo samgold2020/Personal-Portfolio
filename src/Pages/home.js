@@ -7,7 +7,7 @@ import Navbar from '../Components/Navbar/navbar';
 import About from '../Components/About/about';
 import Contact from '../Components/Contact/contact';
 import Footer from '../Components/Footer/Footer';
-import Skills from '../Components/Skills/skills';
+import Skills from '../Components/Skills/Skills';
 import '../App.css';
 
 //Data
