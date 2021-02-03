@@ -15,24 +15,22 @@ import '../App.css';
 import { ProjectData } from '../Components/Projects/ProjectData';
 
 
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 
 const Home = () => {
   const [ isOpen, setIsOpen ] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
     
-	useEffect(() => {
-		Aos.init({});
-	}, []);
+	// useEffect(() => {
+	// 	Aos.init({});
+	// }, []);
 
   return (
     <>
 
       {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
-      <Navbar toggle={toggle}/>
+      <Navbar />
       <Hero />
       <About />
       <Projects slides={ProjectData}/>
