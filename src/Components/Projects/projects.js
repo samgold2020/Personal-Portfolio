@@ -53,6 +53,7 @@ const Projects = ({ slides }) => {
         </Slider>
 
         {ProjectData.map((slide, index) => {
+          // console.log(Math.random())
           return(
 
             <ProjectsContainer key={index}>
@@ -63,7 +64,7 @@ const Projects = ({ slides }) => {
               data-aos="zoom-in"
               data-aos-duration="1500" 
               key={index}>
-                <ProjectName key={slide.title}>{slide.title}</ProjectName>
+                <ProjectName key={slide.title}> {slide.title}</ProjectName>
                 <Img key={slide.image} src={slide.image} alt="project images" />
                 <ProjectDescription key={slide.description}>{slide.description}</ProjectDescription>
 
