@@ -15,7 +15,7 @@ const data = {
 
 }
 
-const footer = () => {
+const Footer = () => {
   return (
     <FooterWrapper>
         <FooterContent>
@@ -49,4 +49,4 @@ const footer = () => {
   )
 }
 
-export default footer;
+export default Footer;
