@@ -3,10 +3,6 @@ import styled from 'styled-components';
 export const SkillsWrapper = styled.div`
 min-height: 50vh;
 padding-bottom: 10vh;
-
-@media screen and (max-width: 780px) {
-  padding: 10vh;
-}
 `;
 
 export const SkillsTitle = styled.p`
@@ -19,6 +15,10 @@ color: #1E272E; //dark blue
 export const SkillsContainer = styled.div`
 display: flex;
 justify-content: center;
+
+@media screen and (max-width: 780px) {
+min-height: 50vh;
+}
 `;
 
 export const SkillsList = styled.div`
@@ -40,6 +40,15 @@ export const SkillsList = styled.div`
   grid-template-rows: repeat(4, 1fr);
   justify-content: center;
 }
+
+@media screen and (max-width: 580px) {
+
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(4, 80px);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
 `;
 
 export const SkillsLogo = styled.div`
@@ -52,10 +61,14 @@ background: grey;
 border-radius: 15px;
 color: #1E272E; //dark blue
 
-&:hover {
-  transform: scale(1.1);
-  transition: all 0.6s ease-in-out;
-  cursor: pointer;
+@media screen and (max-width: 580px) {
+
+  font-size: 42px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
 `;
 
 

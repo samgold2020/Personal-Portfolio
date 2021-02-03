@@ -29,8 +29,8 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+      {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
+      {/* <Navbar toggle={toggle}/> */}
       <Hero />
       <About />
       <Projects slides={ProjectData}/>

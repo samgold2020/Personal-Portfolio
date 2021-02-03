@@ -32,7 +32,7 @@ const About = () => {
         <DescriptionContainer>
           <Img className="about" src={Toby}/>
             {/* <AboutTitle className="about">{data.title}</AboutTitle> */}
-          <Description> {data.description}</Description>
+          {/* <Description> {data.description}</Description> */}
         </DescriptionContainer>
           
       <DetailsWrapper>

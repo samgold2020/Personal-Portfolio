@@ -4,6 +4,7 @@ export const ComponentWrapper = styled.div`
   min-height: 100vh;
   background-color: #1E272E; //dark blue
   padding-top: 5px;
+  padding-bottom: 5vh;
 `;
 
 export const ProjectsContainer = styled.div`
@@ -24,6 +25,10 @@ export const ProjectsContent = styled.div`
 @media screen and (max-width: 1000px) {
   width: 450px;
 }
+
+@media screen and (max-width: 580px) {
+  width: 220px;
+}
 `;
 
 export const ProjectsTitle = styled.p`
@@ -38,6 +43,11 @@ export const Slider = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
+
+  @media screen and (max-width: 580px) {
+    padding-bottom: 20px;
+  }
+  
 `;
 
 export const ArrowLeft = styled.div`
@@ -55,6 +65,12 @@ export const ArrowLeft = styled.div`
 @media screen and (max-width: 800px) {
   left: 20px;
 }
+
+@media screen and (max-width: 580px) {
+  padding-top: 3px;
+  font-size: 2rem;
+  left: 120px;
+}
 `;
 
 export const ArrowRight = styled.div`
@@ -68,6 +84,12 @@ export const ArrowRight = styled.div`
 
   @media screen and (max-width: 800px) {
     right: 30px;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding-top: 3px;
+    font-size: 2rem;
+    right: 130px;
   }
 `;
 
@@ -105,6 +127,10 @@ export const ProjectLinkOne = styled.a`
   transition: all 0.4s ease-out;
   border: 8px solid white;
 
+  @media screen and (max-width: 580px) {
+    font-size: 20px;
+    padding: 10px;
+  }
 
 &:hover {
   transition: all 0.6s ease-in;
@@ -112,9 +138,11 @@ export const ProjectLinkOne = styled.a`
   color: white;
   font-size: 32;
   border: 8px solid white;
+
 `;
 
 export const ProjectLinkTwo = styled.a`
+display: grid;
   grid-column: 2;
   color: black;
   font-size: 28px;
@@ -126,27 +154,40 @@ export const ProjectLinkTwo = styled.a`
   transition: all 0.4s ease-out;
   border: 8px solid white;
   
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
+
   &:hover {
     transition: all 0.6s ease-in;
-    
-  background: #1E272E; // black coral 
-  color: white;
-  font-size: 32;
-  border: 8px solid white;
+    background: #1E272E; // black coral 
+    color: white;
+    font-size: 32;
+    border: 8px solid white;
+
+ 
 `;
 
 export const ProjectName = styled.h2`
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  font-size: 48px;
+  font-size: 56px;
   color: #1E272E; //dark blue
+
+  @media screen and (max-width: 580px) {
+    font-size: 40px;
+  }
 `;
     
 export const ProjectDescription = styled.p`
   font-size: 24px;
   padding: 10px 30px;
   color: #1E272E; //dark blue
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
 `;
 
 export const Img = styled.img`
@@ -156,16 +197,20 @@ export const Img = styled.img`
 @media screen and (max-width: 1000px) {
   width: 200px;
 }
+
 `;
 
 export const SkillsContainer = styled.div`
-// color: white;
 border-top: 2px solid black;
 border-bottom: 2px solid black;
 padding: 10px;
 font-size: 48px;
 display: flex;
 justify-content: space-around;
+
+@media screen and (max-width: 580px) {
+  display: none;
+}
 `;
 
 export const Skills = styled.div`

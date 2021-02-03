@@ -4,6 +4,10 @@ export const HeroWrapper = styled.div`
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
+@media screen and (max-width: 480px) {
+  width: 100vw;
+}
 `;
 
 
