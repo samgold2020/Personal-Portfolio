@@ -21,47 +21,40 @@ This section should list any major frameworks that you built your project using.
 `npm install`
 * Open VSCode
 `code .`
-<!-- ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install
-  ``` -->
-
-<!-- ### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js` or `.env` file
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ``` -->
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Code examples for the Projects Component carousel upcoming! 
+
+## File Structure
+- components/ 
+-- About/
+--- about.js
+--- about-style.js
+-- Contact/
+--- contact.js
+--- contact-style.js
+-- Footer/
+--- footer.js
+--- footer-style.js
+-- Hero/
+--- hero.js
+--- hero-style.js
+-- Navbar/
+--- navbar.js
+--- navbar-style.js
+-- Projects/
+--- projects.js
+--- projectsdata.js
+--- projects-style.js
+-- Skills/
+--- skills.js
+--- skills-style.js
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/samgold2020/Personal-Portfolio/issues) for a list of proposed features (and known issues).
-
-<!-- CONTACT -->
-## Contact
-
-Sam Goldstein - [@twitter](https://twitter.com/@sgoldstein92) - sgoldstein312@gmail.com
-
-Project Link: [https://github.com/your_username/repo_name](https://happy-kirch-922c4e.netlify.app/)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -70,4 +63,11 @@ Project Link: [https://github.com/your_username/repo_name](https://happy-kirch-9
 * [React Icons](https://react-icons.github.io/react-icons/)
 * [Animate On Scroll](https://michalsnik.github.io/aos/)
 * [Chicago Skyline Image](https://www.motionplaces.com/chicago-dusk-timelapse-free-stock-footage/)
+
+<!-- CONTACT -->
+## Contact
+
+Sam Goldstein - [@twitter](https://twitter.com/@sgoldstein92) - sgoldstein312@gmail.com
+
+Project Link: [https://github.com/your_username/repo_name](https://happy-kirch-922c4e.netlify.app/)
 
