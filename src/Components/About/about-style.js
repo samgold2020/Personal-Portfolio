@@ -14,15 +14,15 @@ color: #1E272E; //dark blue
 
 export const DescriptionContainer = styled.div`
 display: grid;
-grid-template-columns: 140px auto;
-// grid-template-rows: 130px auto;
+border-radius: 15px;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 1fr;
 box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
-padding: 20px;
-
+padding: 20px 40px 100px 40px;
 `;
 
 export const Img = styled.img`
-// border-radius: 15%;
+// border-radius: 15px;
 width: 210px;
 height: 270px;
 position: relative;
@@ -38,49 +38,22 @@ z-index: 2;
 export const Description = styled.p`
 font-size: 36px;
 text-align: center;
-grid-column: 2;
+grid-column: 2/8;
 padding-left: 100px;
 padding-right: 20px;
 padding-top: 40px;
 color: #1E272E; //dark blue
 `;
 
- export const DetailsWrapper = styled.div`
- display: flex;
- justify-content: center;
- padding-top: 120px;
- `;
-
- export const DetailsContainer = styled.div`
- display: grid;
- grid-template-columns: repeat(5, 450px);
- grid-column-gap: 80px;
- grid-gap: 40px;
-
- @media screen and (max-width: 1450px) {
-  grid-template-columns: repeat(5, 350px);
-  }
-
-@media screen and (max-width: 1100px) {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  }
- `;
-
 export const DetailOne= styled.div`
- display: grid;
- text-align: right;
- #1E272E; //dark blue
- padding: 40px 0 0 40px;
- font-size: 24px;
+ color: #1E272E; //dark blue
  border-top: 8px solid #81A9B3; //teal
  border-radius: 6px;
- grid-column: 2;
- padding-right: 20px;
- box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ width: 300px;
+ height: 200px;
 
  // Animation for color change blue
+ box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
  background: linear-gradient(to right, white 50%, #81A9B3 50%) left;
  background-size: 200%;
  transition: .5s ease-out;
@@ -91,28 +64,17 @@ export const DetailOne= styled.div`
   background-position: right;
  `;
 
-//  export const CodewarsBadge = styled.img`
-// padding: 60px 20px 0px 5px;
+export const CodewarsBadge = styled.img`
+ height: 40px;
+ `;
 
-// @media screen and (max-width: 1450px) {
-//   width: 280px;
-// }
-//  `;
-
- export const DetailTwo= styled.div`
- display: flex;
- justify-content: center;
- text-align: center;
-//  text-align: right;
+export const DetailTwo= styled.div`
  color: #1E272E; //dark blue
-//  font-size: 24px;
  border-top: 8px solid #FFC477; //red
  border-radius: 6px;
-//  padding-right: 20px;
-//  padding-left: 10px;
-//  padding-top: 40px;
- background-color: white;
- box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+ width: 300px;
+ height: 200px;
 
   // Animation for color change yellow
   background: linear-gradient(to right, white 50%, #FFC477 50%) left;
@@ -127,44 +89,35 @@ export const DetailOne= styled.div`
  `;
 
  export const DetailThree= styled.div`
- display: grid;
- text-align: right;
  color: #1E272E; //dark blue
- padding: 40px 0 0 40px;
- font-size: 24px;
  border-top: 8px solid #BB3420; //red
  border-radius: 6px;
- padding-right: 20px;
- box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+ box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
+ width: 300px;
+ height: 200px;
 
  // Animation for color change red
-  background: linear-gradient(to left, white 50%, #BB3420 50%) right;
+  background: linear-gradient(to right, white 50%, #BB3420 50%) left;
   background-size: 200%;
   transition: .5s ease-out;
 
  &:hover {
   transform: scale(1.1);
   cursor: pointer;
-  background-position: left;
+  background-position: right;
  `;
 
- export const SocialLinks = styled.a`
+ export const LinkedIn = styled.a`
 font-size: 84px;
 color: black;
-display: flex;
-align-self: flex-end;
-padding 20px 0px;
+// text-align: center;
+// justify-content: center;
 `;
 
-
-// export const ResumeWrapper = styled.div`
-// display: grid:
-// grid-template-columns: repeat(3, 1fr)
-// background-color: green;
-// `;
 export const Resume = styled.a`
 // justify-content: center;
-align-self: center;
+justify-content: center;
+text-align: center;
 cursor: pointer;
 color: #1E272E; //dark blue
 text-decoration: none;
@@ -180,4 +133,30 @@ border-radius: 15px;
   font-size: 32;
 }
 
+`;
+
+
+export const ItemContainerOne = styled.div`
+grid-column: 2/4;
+text-align: center;
+padding-top: 30px;
+`;
+export const ItemContainerTwo = styled.div`
+grid-column: 4/6;
+text-align: center;
+padding-top: 30px;
+
+`;
+export const ItemContainerThree = styled.div`
+grid-column: 6/8;
+text-align: center;
+padding-top: 30px;
+
+`;
+
+export const DetailLinks = styled.div`
+display: flex;
+justify-content: center;
+text-align: center;
+padding-top: 50px;
 `;

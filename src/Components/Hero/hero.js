@@ -11,7 +11,7 @@ import {
 
 const about = {
   title: 'Samantha Goldstein',
-  subtitle: "Fullstack Softare Engineer",
+  subtitle: "Software Engineer",
 }
 
 const Hero = () => {
