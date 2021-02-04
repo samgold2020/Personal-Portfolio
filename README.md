@@ -27,7 +27,7 @@ This section should list any major frameworks that you built your project using.
 Code examples for the Projects Component carousel upcoming! 
 
 ## File Structure
-- components/ 
+ components/ 
 -- About/
 --- about.js
 --- about-style.js
