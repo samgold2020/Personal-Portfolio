@@ -1,38 +1,35 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37def81a-da64-4124-bdf3-3798eb93a693/deploy-status)](https://app.netlify.com/sites/happy-kirch-922c4e/deploys)
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Information about the application.
-
 Main purpose:
-* Personal Portfolio 
+* This is a personal portfolio built using React. 
 
 Summary: 
-
+* Built to showcase personal projects, host my resume, and showcase my abilities. 
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [React](https://reactjs.org/)
-* [Styled Components](https://styled-components.com/)
-* [Animate On Scroll](https://michalsnik.github.io/aos/)
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+* To get a local copy up and running fork and clone this repository.
+* Change into the new directory and create a development branch to work on. 
+* Install dependencies
+`npm install`
+* Open VSCode
+`code .`
+<!-- ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install
-  ```
+  ``` -->
 
-### Installation
+<!-- ### Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -46,59 +43,31 @@ This is an example of how to list things you need to use the software and how to
 4. Enter your API in `config.js` or `.env` file
    ```JS
    const API_KEY = 'ENTER YOUR API';
-   ```
+   ``` -->
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+Code examples for the Projects Component carousel upcoming! 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https:{link_to_issues}) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Explanation of about how to contribute and appreciations for future contributions. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-6. npm - i https://michalsnik.github.io/aos/
-
-
-
-<!-- LICENSE -->
-## License
-
-Any licenses will go here. See `LICENSE` for more information.
-
-
+See the [open issues](https://github.com/samgold2020/Personal-Portfolio/issues) for a list of proposed features (and known issues).
 
 <!-- CONTACT -->
 ## Contact
 
-Sam Goldstein - [@twitter](https://twitter.com/your_username) - email@example.com
+Sam Goldstein - [@twitter](https://twitter.com/@sgoldstein92) - sgoldstein312@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
+Project Link: [https://github.com/your_username/repo_name](https://happy-kirch-922c4e.netlify.app/)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Icon Finder](https://www.iconfinder.com/)
 
+* [Styled Components](https://styled-components.com/)
+* [React Icons](https://react-icons.github.io/react-icons/)
+* [Animate On Scroll](https://michalsnik.github.io/aos/)
+* [Chicago Skyline Image](https://www.motionplaces.com/chicago-dusk-timelapse-free-stock-footage/)
 
-# Image Download: 
-https://www.motionplaces.com/chicago-dusk-timelapse-free-stock-footage/
