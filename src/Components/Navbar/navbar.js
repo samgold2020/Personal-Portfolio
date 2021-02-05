@@ -55,7 +55,7 @@ const Navbar = ({ toggle }) => {
           </Link>
           <Link
         activeClass="active"
-        to="contactme"
+        to="reachme"
         spy={true}
         smooth={true}
         offset={-70}

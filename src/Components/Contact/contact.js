@@ -13,7 +13,7 @@ import {
 const Contact = () => {
 
 	return (
-		<ContactWrapper className="contactme">
+		<ContactWrapper className="reachme">
 			<ContactContainer className="contact">
 						<Form
 						name ='contact'
