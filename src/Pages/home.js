@@ -13,15 +13,7 @@ import '../App.css';
 //Data
 import { ProjectData } from '../Components/Projects/ProjectData';
 
-// import Aos from "aos";
-// import "aos/dist/aos.css";
-
 const Home = () => {
-  // const [ isOpen, setIsOpen ] = useState(false);
-    
-	// useEffect(() => {
-	// 	Aos.init({});
-	// }, []);
 
   return (
     <>
