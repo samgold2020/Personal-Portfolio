@@ -13,8 +13,8 @@ import {
 const Contact = () => {
 
 	return (
-		<ContactWrapper>
-			<ContactContainer className="contactme">
+		<ContactWrapper className="contactme">
+			<ContactContainer className="contact">
 						<Form
 						name ='contact'
 						action ='/'
