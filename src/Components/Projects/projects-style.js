@@ -23,15 +23,15 @@ export const ProjectsContent = styled.div`
   width: 900px;
 
 @media screen and (max-width: 1400px) {
-  width: 600px;
+  width: 700px;
 }
 
-@media screen and (max-width: 1000px) {
-  width: 450px;
+@media screen and (max-width: 1100px) {
+  width: 550px;
 }
 
 @media screen and (max-width: 580px) {
-  width: 320px;
+  width: 200px;
 }
 `;
 
@@ -57,8 +57,9 @@ export const Slider = styled.div`
 export const ArrowLeft = styled.div`
   position: absolute;
   padding-top: 200px;
-  left: 120px;
-  font-size: 3rem;
+  left: 110px;
+
+  font-size: 4rem;
   color: white;
   z-index: 3;
   cursor: pointer;
@@ -66,15 +67,13 @@ export const ArrowLeft = styled.div`
   user-select: none;
 
 
-@media screen and (max-width: 800px) {
-  left: 20px;
-}
-
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 950px) {
   padding-top: 1px;
   font-size: 3rem;
-  left: 120px;
+  left: 200px;
+  bottom: -40px;
 }
+
 `;
 
 export const ArrowRight = styled.div`
@@ -86,28 +85,13 @@ export const ArrowRight = styled.div`
   z-index: 3;
   cursor: pointer;
 
-  @media screen and (max-width: 800px) {
-    right: 30px;
-  }
-
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 950px) {
     padding-top: 1px;
     font-size: 3rem;
-    right: 130px;
+    right: 210px;
+    bottom: -40px;
   }
 `;
-
-
-// export const slide = styled.div`
-//   opacity: 0;
-//   transition-duration: 1s ease;
-
-// &:active {
-//   opacity: 1;
-//   transition-duration: 1s;
-//   transform: scale(1.08)
-// }
-// `;
 
 export const LinksContainer = styled.div`
   display: grid;

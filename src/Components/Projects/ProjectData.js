@@ -2,7 +2,16 @@
 
 export const ProjectData = [
   { 
-    id: 1,
+   id: 1,
+   title: '921 Steak',
+   url: 'https://www.921steak.com/',
+   repo: 'https://github.com/REST-a-site',
+   description: 'A fullstack restaurant applicaiton complete with admin login, a Opentable tester widget, and full CRUD functionality to update the menu component from the front end.  Checkout the Github ReadMe for login credentials!',
+   image: 'https://images.unsplash.com/photo-1598930230137-27b0b22154fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80',
+   alt: 'steak plate',
+  },
+  { 
+    id: 2,
     title: 'Portfolio',
     description: 'Built with React styled components, React Icons, smooth-scroll, and carousel, this front-end application features a form hosted on Netifly.',
     skills: ["React", "Javascript", "HTML", "CSS"],
@@ -11,15 +20,6 @@ export const ProjectData = [
     image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2313&q=80',
     alt: "chicago skyline", 
    },
-  { 
-   id: 2,
-   title: '921 Steak',
-   url: 'https://www.921steak.com/',
-   repo: 'https://github.com/REST-a-site',
-   description: 'A fullstack restaurant applicaiton complete with admin login, a Opentable tester widget, and full CRUD functionality to update the menu component from the front end.  Checkout the Github ReadMe for login credentials!',
-   image: 'https://images.unsplash.com/photo-1598930230137-27b0b22154fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80',
-   alt: 'steak plate',
-  },
   { 
     id: 3,
     title: 'Meals for Two',

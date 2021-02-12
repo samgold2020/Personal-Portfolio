@@ -1,48 +1,65 @@
 import styled from 'styled-components';
 
 export const AboutWrapper =styled.div`
-padding: 60px 200px;
+padding: 60px 60px;
 min-height: 100vh;
 `;
 
-export const AboutTitle = styled.p`
-font-size: 48px;
-display: flex;
-justify-content: center;
-color: #1E272E; //dark blue
-`;
-
-export const DescriptionContainer = styled.div`
+export const AboutContainer = styled.div`
 display: grid;
 border-radius: 15px;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: 1fr;
+grid-template-columns: 350px auto;
 box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
-padding: 20px 40px 100px 40px;
-`;
+padding: 20px;
 
-export const Img = styled.img`
-// border-radius: 15px;
-width: 210px;
-height: 270px;
-position: relative;
-padding-top: 20px;
-padding-left: 20px;
-z-index: 2;
+@media screen and (max-width: 1100px) {
+  grid-template-columns: 250px auto;
+}
 
 @media screen and (max-width: 800px) {
-  display: none;
+  grid-template-columns:  auto;
+  text-align: center;
+}
+
+`;
+
+export const AboutPhoto = styled.div`
+align-self: center;
+
+`;
+
+export const AboutDescription = styled.div``;
+export const Description = styled.p`
+font-size: 24px;
+`;
+
+export const AboutImg = styled.img`
+width: 300px;
+height: 400px;
+border-radius: 15px;
+
+
+@media screen and (max-width: 1100px) {
+  width: 200px;
+  height: 250px;
 }
 `;
 
-export const Description = styled.p`
-font-size: 36px;
-text-align: center;
-grid-column: 2/8;
-padding-left: 100px;
-padding-right: 20px;
-padding-top: 40px;
-color: #1E272E; //dark blue
+export const LinksWrapper = styled.div`
+display: flex;
+justify-content: center;
+flex-direction: row;
+
+@media screen and (max-width: 800px) {
+
+}
+`;
+export const LinksContainer = styled.div`
+padding: 40px;
+
+@media screen and (max-width: 800px) {
+padding: 40px 20px;
+}
 `;
 
 export const DetailOne= styled.div`
@@ -64,10 +81,6 @@ export const DetailOne= styled.div`
   background-position: right;
  `;
 
-export const CodewarsBadge = styled.img`
- height: 40px;
- `;
-
 export const DetailTwo= styled.div`
  color: #1E272E; //dark blue
  border-top: 8px solid #FFC477; //red
@@ -85,33 +98,11 @@ export const DetailTwo= styled.div`
   transform: scale(1.1);
   cursor: pointer;
   background-position: right;
-
- `;
-
- export const DetailThree= styled.div`
- color: #1E272E; //dark blue
- border-top: 8px solid #BB3420; //red
- border-radius: 6px;
- box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.2);
- width: 300px;
- height: 200px;
-
- // Animation for color change red
-  background: linear-gradient(to right, white 50%, #BB3420 50%) left;
-  background-size: 200%;
-  transition: .5s ease-out;
-
- &:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  background-position: right;
  `;
 
  export const LinkedIn = styled.a`
 font-size: 84px;
 color: black;
-// text-align: center;
-// justify-content: center;
 `;
 
 export const Resume = styled.a`
@@ -132,26 +123,15 @@ border-radius: 15px;
   color: white;
   font-size: 32;
 }
-
 `;
 
 
 export const ItemContainerOne = styled.div`
-grid-column: 2/4;
 text-align: center;
-padding-top: 30px;
 `;
+
 export const ItemContainerTwo = styled.div`
-grid-column: 4/6;
 text-align: center;
-padding-top: 30px;
-
-`;
-export const ItemContainerThree = styled.div`
-grid-column: 6/8;
-text-align: center;
-padding-top: 30px;
-
 `;
 
 export const DetailLinks = styled.div`

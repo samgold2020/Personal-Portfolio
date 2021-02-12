@@ -5,42 +5,47 @@ import PersonalResume from '../../docs/Resume.pdf';
 
 import {
   AboutWrapper,
-  // AboutTitle,
+  AboutContainer,
+  AboutPhoto,
+  AboutDescription,
   Description,
-  DescriptionContainer,
+  AboutImg,
+  LinksWrapper,
+  LinksContainer,
   ItemContainerOne,
   ItemContainerTwo,
-  ItemContainerThree,
   LinkedIn,
-  Img,
   DetailOne,
   DetailTwo,
   DetailLinks,
-  CodewarsBadge,
-  DetailThree,
-  // ResumeWrapper,
   Resume,
 } from './about-style';
 
 const data = {
   title: "👋 Nice to meet you!",
-  description: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly. In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, or biking around Chi-Town.",
-  detailOne: "In my spare time I can be found reading, riding my biking around Chicago, playing piano, or hanging out with my cat, Toby Keith (pictured above).",
-  detailTwo: "I also enjoy working to up my game on Codewars:",
-  detailThree: "I strive to make beautiful, functional, simple applications. Check out my CodePen to see some cool CSS!",
+  aboutdetailsone: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
+  aboutdetailstwo: "In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, or biking around Chi-Town.",
   resume: "Resume",
 }
 
 const About = () => {
   return (
     <AboutWrapper>
-      
-        <DescriptionContainer>
-          <Img className="about" src={Toby}/>
-            {/* <AboutTitle className="about">{data.title}</AboutTitle> */}
-          <Description> {data.description}</Description>
-
-          <ItemContainerOne>
+        <AboutContainer className="about">
+          <AboutPhoto>
+            <AboutImg src={Toby} alt="cat photo"></AboutImg>
+          </AboutPhoto>
+          <AboutDescription>
+            <Description>{data.aboutdetailsone}</Description>
+            <Description>{data.aboutdetailstwo}</Description>
+    
+          </AboutDescription>
+  
+          
+      </AboutContainer>
+      <LinksWrapper>
+      <LinksContainer>
+      <ItemContainerOne>
             <DetailOne>
               <DetailLinks>
          <LinkedIn
@@ -53,8 +58,10 @@ const About = () => {
           </LinkedIn>
           </DetailLinks>
           </DetailOne></ItemContainerOne>
+      </LinksContainer>
 
-          <ItemContainerTwo>
+      <LinksContainer>
+      <ItemContainerTwo>
           <DetailTwo>  
             <DetailLinks>
           <Resume 
@@ -67,19 +74,8 @@ const About = () => {
           </DetailLinks> 
           </DetailTwo>
           </ItemContainerTwo>
-          
-          <ItemContainerThree>
-          <DetailThree>
-          <DetailLinks> 
-          <CodewarsBadge 
-        data-aos="fade-down"
-        data-aos-duration="1500"
-        src='https://www.codewars.com/users/SamGold2020/badges/micro'/>
-        </DetailLinks> 
-        </DetailThree>
-          </ItemContainerThree>
-          
-      </DescriptionContainer>
+          </LinksContainer>
+      </LinksWrapper>
     </AboutWrapper>
   )
 }
