@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/37def81a-da64-4124-bdf3-3798eb93a693/deploy-status)](https://app.netlify.com/sites/happy-kirch-922c4e/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37def81a-da64-4124-bdf3-3798eb93a693/deploy-status)](https://app.netlify.com/sites/sam-goldstein/deploys)
 ## About The Project
 
 Main purpose:
