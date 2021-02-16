@@ -56,9 +56,6 @@ This is a personal portfolio built to showcase my projects, provide links to the
 * [Styled Components](https://styled-components.com/)
 * [React Icons](https://react-icons.github.io/react-icons/)
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [React](https://reactjs.org/)
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -82,7 +79,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 ## Usage
 
-The projects carousel displays the next project.id when the arrow is clicked 
+The projects carousel displays the next project.id when the arrow is clicked. See the code below for further explination: 
 ```
 //set state for current project, initialize at zero
  const [current, setCurrent] = useState(0);
@@ -90,7 +87,7 @@ The projects carousel displays the next project.id when the arrow is clicked
 
  //create a function for nextSlide onClick
  const nextSlide = () => {
-   //Create a ternary for setting state, if it reaches the end set it back to zero, otherwise add one to the current slide.length
+   //Create a ternary for setting state, if it reaches the end set it back to zero, otherwise add one to the current length
    setCurrent(current === length - 1 ? 0 : current + 1);
  };
 
@@ -124,5 +121,5 @@ See the [open issues](https://github.com/samgold2020/Personal-Portfolio/issues) 
 
 Sam Goldstein - [@twitter](https://twitter.com/@sgoldstein92) - sgoldstein312@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://sam-goldstein.netlify.app/)
+[Visit the deployed site here!](https://sam-goldstein.netlify.app/)
 
