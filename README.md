@@ -10,14 +10,7 @@
     <img src="https://media.giphy.com/media/lN1MSFi7bgPjLItYeU/giphy.gif" alt="Personal Portfolio Gif" width="800" height="600">
     <br/>
   </a>
-    <a href="https://github.com/samgold2020/Personal-Portfolio"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/samgold2020/Personal-Portfolio">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/samgold2020/Personal-Portfolio"><strong>Explore the site »</strong></a>
   </p>
 </p>
 
