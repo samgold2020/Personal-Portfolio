@@ -22,9 +22,9 @@ import {
 } from './about-style';
 
 const data = {
-  title: "👋 Nice to meet you!",
-  aboutdetailsone: "I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
-  aboutdetailstwo: "In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, or biking around Chi-Town.",
+  aboutdetailsone: "Thanks for checking out my portfolio! I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
+  aboutdetailstwo: "In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, practicing Javascript and Python on Codewars, and biking around Chi-Town (only in the summer, of course).",
+  aboutdetailsthree: "I have a passion for collaboration, if you'd like to work together please fill out the form below or contact me on LinkedIn!",
   resume: "Resume",
 }
 
@@ -38,6 +38,7 @@ const About = () => {
           <AboutDescription>
             <Description>{data.aboutdetailsone}</Description>
             <Description>{data.aboutdetailstwo}</Description>
+            <Description>{data.aboutdetailsthree}</Description>
     
           </AboutDescription>
   

@@ -78,6 +78,13 @@ const Projects = ({ slides }) => {
                  </SkillsContainer>
             
                   ) : slide.id === 2 ? (
+                    <SkillsContainer>
+                    <Skills> <SiReact /> </Skills>
+                    <Skills> <SiJavascript /> </Skills>
+                    <Skills> <SiHtml5 /> </Skills>
+                    <Skills> <SiCss3 /> </Skills>
+                  </SkillsContainer> 
+                  ) : slide.id === 3 ? (
                   <SkillsContainer>
                    <Skills> <SiReact /> </Skills>
                    <Skills> <SiJavascript /> </Skills>
@@ -85,15 +92,14 @@ const Projects = ({ slides }) => {
                    <Skills> <SiPython  /> </Skills>
                    <Skills> <SiPostman /> </Skills>
                  </SkillsContainer>
-
-                  ) :  slide.id === 3 ? (
+                  ) :  slide.id === 4 ? (
                     <SkillsContainer>
                       <Skills> <SiReact /> </Skills>
                       <Skills> <SiJavascript /> </Skills>
                       <Skills> <SiHtml5 /> </Skills>
                       <Skills> <SiCss3 /> </Skills>
                     </SkillsContainer>
-                  ) : slide.id === 4 ? (
+                  ) : slide.id === 5 ? (
                     <SkillsContainer>
                       <Skills> <SiJavascript /> </Skills>
                       <Skills> <SiHtml5 /> </Skills>

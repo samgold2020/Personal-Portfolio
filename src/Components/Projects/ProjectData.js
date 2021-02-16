@@ -12,8 +12,17 @@ export const ProjectData = [
   },
   { 
     id: 2,
+    title: 'Vaxine',
+    url: 'https://vaxine.netlify.app/',
+    repo: 'https://github.com/Covid-Bookings/Front-End-Covid-Bookings',
+    description: 'Schedule your Coronavirus vaccine today using Vaxine! Built over a three-day hackathon in Feburary 2021 by a team of three UX Designers and three Software Engineers, and sponsored by General Assembly, this front-end web application earned second place out of eight total teams.',
+    image: 'https://s3-alpha-sig.figma.com/img/75ba/3b50/4d3e8be4eb2eb0e667d81550969d5131?Expires=1614556800&Signature=bm~TOQ~I0Pz7nXvm4p5FQde58eO1s44OKBuP9ijkLSZS2f--28w3nuLE8yHV55DyyBlYUu~qxb0jy~4cvKNVwk3bkgjcLROPK7wxZ3MNJPcYFijfLNz5CTEGo0Eb4-XCDHdmWqSSDMhcjJb4Iq~X3zjYsOkMEVeu3y3SvirYVKQPb5iTYu7IPGkxwSOALUv3DPLVHePb-hd9SQvUWJDH~BkxK2dQquoDs4PGTCwT7T5t5Y3PzaYWWaouMolQopWQwLQpdGISUvtbhOS2OpavobWAMVIcJaujW-xhhrj7y03MeflnnpNp1jwnMhwcDPjvg~0Ppr1bQQwWAle~PGAGyA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
+    alt: "Vaxine logo",
+   },
+  { 
+    id: 3,
     title: 'Portfolio',
-    description: 'Built with React styled components, React Icons, smooth-scroll, and carousel, this front-end application features a form hosted on Netifly.',
+    description: 'Built with React styled components, React Icons, smooth-scroll, and carousel, this front-end application features a form hosted on Netlify.',
     skills: ["React", "Javascript", "HTML", "CSS"],
     url: 'https://happy-kirch-922c4e.netlify.app/',
     repo: 'https://github.com/samgold2020/Personal-Portfolio',
@@ -21,7 +30,7 @@ export const ProjectData = [
     alt: "chicago skyline", 
    },
   { 
-    id: 3,
+    id: 4,
     title: 'Meals for Two',
     url: 'https://github.com/samgold2020/MealsForYou',
     repo: 'https://github.com/samgold2020/MealsForYou',
@@ -30,13 +39,12 @@ export const ProjectData = [
     alt: "spoon spices", 
    },
    { 
-    id: 4,
+    id: 5,
     title: 'Flipcards',
     url: 'https://samgold2020.github.io/Flipcards/level-one.html',
     repo: 'https://github.com/samgold2020/Flipcards',
-    description: 'Test your memory with this fun Vanilla Javascipt game!  Built with CSS grid, flipcard animation, and DOM manipulation. Check out the directions modal for Dark Mode.',
+    description: 'Test your memory with this fun Vanilla Javascipt game!  Built with CSS grid, flipcard animation, and DOM manipulation. Check out the directions modal for a dark mode toggle.',
     image: 'https://images.unsplash.com/photo-1592933517489-50318e52d74b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80',
     alt: "playing cards",
- 
    },
 ]
