@@ -31,6 +31,7 @@ align-self: center;
 export const AboutDescription = styled.div``;
 export const Description = styled.p`
 font-size: 24px;
+padding: 10px;
 `;
 
 export const AboutImg = styled.img`

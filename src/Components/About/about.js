@@ -23,8 +23,9 @@ import {
 
 const data = {
   aboutdetailsone: "Thanks for checking out my portfolio! I am a fullstack software engineer based in Chicago. I enjoy building object-oriented, responsive web applications that are easy to navigate and user friendly.",
-  aboutdetailstwo: "In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, practicing Javascript and Python on Codewars, and biking around Chi-Town (only in the summer, of course).",
-  aboutdetailsthree: "I have a passion for collaboration, if you'd like to work together please fill out the form below or contact me on LinkedIn!",
+  aboutdetailstwo: "I have 5 years of Account Management experience working for various start-ups in Chicago. Over the years I became frustrated that I couldn't pull custom reports from the database or solve product bugs without the help of engineers. It's at this point in 2019 I began my journey into the world of Software Engineering via an Intro to SQL course at General Assembly, and have been enamoured with the programers power to build, create, and solve ever since.",
+  aboutdetailsthree: "In my spare time I can be found hanging out with my cat, Toby Keith (pictured left), playing piano, practicing Javascript and Python on Codewars, and biking around Chi-Town (only in the summer, of course).",
+  // aboutdetailsthree: "I have a passion for collaboration, if you'd like to work together please fill out the form below or contact me on LinkedIn!",
   resume: "Resume",
 }
 
