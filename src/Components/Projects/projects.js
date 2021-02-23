@@ -73,8 +73,10 @@ const Projects = ({ slides }) => {
                  <SkillsContainer>
                    <Skills> <SiReact /> </Skills>
                    <Skills> <SiJavascript /> </Skills>
-                   <Skills> <SiHtml5 /> </Skills>
                    <Skills> <SiCss3 /> </Skills>
+                   <Skills> <SiDjango /> </Skills>
+                   <Skills> <SiPython  /> </Skills>
+                   <Skills> <SiPostman /> </Skills>
                  </SkillsContainer>
             
                   ) : slide.id === 2 ? (
@@ -88,9 +90,8 @@ const Projects = ({ slides }) => {
                   <SkillsContainer>
                    <Skills> <SiReact /> </Skills>
                    <Skills> <SiJavascript /> </Skills>
-                   <Skills> <SiDjango /> </Skills>
-                   <Skills> <SiPython  /> </Skills>
-                   <Skills> <SiPostman /> </Skills>
+                   <Skills> <SiHtml5 /> </Skills>
+                   <Skills> <SiCss3 /> </Skills>
                  </SkillsContainer>
                   ) :  slide.id === 4 ? (
                     <SkillsContainer>
