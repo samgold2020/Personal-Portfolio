@@ -1,7 +1,7 @@
 import React from 'react';
 import Toby from '../../images/TobyKeith.jpeg';
 import { FaLinkedin } from 'react-icons/fa';
-import PersonalResume from '../../docs/Resume.pdf';
+import PersonalResume from '../../docs/Resume-Goldstein.pdf';
 
 import {
   AboutWrapper,
@@ -69,8 +69,7 @@ const About = () => {
           data-aos="fade-down"
           data-aos-duration="1500"
           href={PersonalResume} 
-          target='_blank' 
-          rel='noreferrer'> 
+          target='_blank'> 
           {data.resume}</Resume>
           </DetailLinks> 
           </DetailTwo>
